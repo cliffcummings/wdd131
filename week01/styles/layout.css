@@ -52,7 +52,6 @@ footer  {
 }
 
 section, aside {
-  padding: auto;
   text-align: left;
   padding: 20px 10px 250px 20px;
 }
@@ -117,6 +116,8 @@ section, aside {
   grid-column: 1 / span 3;
   background-color: lightgray;
   font-size: 1.2rem;
+  text-align: left;
+  padding: 20px 10px 250px 20px;
 }
 
 .grid-item4 {
