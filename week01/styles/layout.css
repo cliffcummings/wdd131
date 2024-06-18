@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
+:root {
+    --back_color1: #0d1b2ae3;
+    --back_color2: #5f5656;
+    --back_color3: #bababa;
+    --text_color1: #ffffff;
+    --text_color2: #000000;
+    --wild_red: #FF0000;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 20px 20px 60px 20px;
+  color: white;
+}
+
+h2 {
+  font-size: 1.1 rem;  
+  text-align: center;
+  color: rgb(89, 89, 174);
+  padding: .5rem 1rem 0;
+}
+
+nav {
+  padding: 5px;
+  max-width: 90vw;
+}
+
+
+p {
+	text-align: center;
+	font-size: 0.5rem;
+}
+
+body  {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+  justify-content: center;
+}
+
+footer  {
+  max-width: 1000px;
+  min-height: 150px;
+  padding: 10px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--back_color2);
+}
+
+section, aside {
+  padding: auto;
+  text-align: left;
+  padding: 20px 10px 250px 20px;
+}
+
+/* ------ CLASSES ------ */
+
+/* .header {
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+} */
+
+.grid-container { 
+  display: grid;    
+  max-width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.navigation {
+	display: flex;
+	background-color: #333;
+	align-items: center;
+  grid-column: 1 / span 4;
+}
+
+.navigation a {
+  flex: 1 1 100%;
+	display: block;
+	color: white;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+	font-weight: 700;
+  color: black;
+  background-color: yellow;
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+
+.wrap {
+		flex-wrap: wrap;
+}
+
+.header {
+  background-color: var(--back_color2);
+}
+
+.grid-item1 {
+  grid-column: 1 / span 4;
+}
+
+/* .grid-item2 {
+  grid-column: 1 / span 4;
+} */
+
+.grid-item3 {
+  grid-column: 1 / span 3;
+  background-color: lightgray;
+  font-size: 1.2rem;
+}
+
+.grid-item4 {
+  grid-column: 4;
+  background-color: white;
+  font-size: 1.2rem;
+} 
+
+.grid-item5 {
+  grid-column: 1 / 5;
+} 
+
+  
