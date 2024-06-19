@@ -16,9 +16,9 @@ h1 {
   color: white;
 }
 
+/* Padding: top right bottom left */
 nav {
   padding: 5px;
-  max-width: 90vw;
 }
 
 
@@ -27,10 +27,16 @@ p {
 	font-size: 1.2rem;
 }
 
+header {
+  padding: 0px;
+  background-color: var(--back_color2);
+  border: 1px solid var(--back_color2);
+}
+
 body  {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 20px;
+  /* padding: 20px; */
   justify-content: center;
 }
 
@@ -92,10 +98,10 @@ section, aside {
 .wrap {
 		flex-wrap: wrap;
 }
-
+/* 
 .header {
   background-color: var(--back_color2);
-}
+} */
 
 .grid-item1 {
   grid-column: 1 / span 4;
