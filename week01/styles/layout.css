@@ -18,7 +18,32 @@ h1 {
 
 /* Padding: top right bottom left */
 nav {
+  flex: 1 1 100%;
+  display: block;
+	color: white;
   padding: 5px;
+  display: flex;
+	background-color: #333;
+	align-items: center;
+}
+
+nav a {
+  flex: 1 1 100%;
+	display: block;
+	color: white;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+nav a:hover {
+	font-weight: 700;
+  color: black;
+  background-color: yellow;
+	text-decoration: underline;
+	text-decoration-color: red;
 }
 
 p {
@@ -68,32 +93,6 @@ section, aside {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.navigation {
-	display: flex;
-	background-color: #333;
-	align-items: center;
-  grid-column: 1 / span 4;
-}
-
-.navigation a {
-  flex: 1 1 100%;
-	display: block;
-	color: white;
-	padding: 0.75rem;
-	text-decoration: none;
-	text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-.navigation a:hover {
-	font-weight: 700;
-  color: black;
-  background-color: yellow;
-	text-decoration: underline;
-	text-decoration-color: red;
-}
-
 .wrap {
 		flex-wrap: wrap;
 }
@@ -105,10 +104,6 @@ section, aside {
 .grid-item1 {
   grid-column: 1 / span 4;
 }
-
-/* .grid-item2 {
-  grid-column: 1 / span 4;
-} */
 
 .grid-item3 {
   grid-column: 1 / span 3;
