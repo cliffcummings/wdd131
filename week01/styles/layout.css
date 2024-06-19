@@ -21,7 +21,6 @@ nav {
   padding: 5px;
 }
 
-
 p {
 	text-align: left;
 	font-size: 1.2rem;
@@ -98,8 +97,8 @@ section, aside {
 .wrap {
 		flex-wrap: wrap;
 }
-/* 
-.header {
+
+/* .header {
   background-color: var(--back_color2);
 } */
 
