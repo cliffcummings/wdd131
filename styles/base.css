@@ -10,167 +10,105 @@
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    background-color: var(--back_color3);
-}
+    padding: 0px;
+    background-color: var(--back_color2);
+    border: 1px solid var(--back_color2);
+  }
 
 body {
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-    width: 800px;
+    max-width: 1000px;
+    height: 100%;
     margin: 0 auto;
+    padding: 2rem, auto;
 }
 
 footer {
-    display: grid ;
-    grid-template-columns: 3fr 1fr;
-    color: black;
-    background-color: var(--accent_color2);
-    margin-top: 15px;
+    color: white;
+    background-color: var(--back_color1);
     border-top: 1px solid var(--back_color1);
-    border-bottom: 10px solid var(--back_color2);
+    border-bottom: 4px solid var(--back_color1);
     text-align: center;
-}
-
-section {
-    margin-bottom: 2rem;
 }
 
 h1 {
-    font-family: 'Rock Salt', 'Bradley Hand', cursive;
-    color: var(--accent_color2);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    font-size: 1.5rem;
     text-align: center;
-    margin: 0 auto;
-}
+    padding: 20px;
+    color: white;
+  }
 
 h2 {
+    font-size: 1.2rem;
     font-family: Roboto, Arial, sans-serif;
-    margin: 0.5rem auto;
+    padding: 0.5rem;
+    text-align: center;
+    /* margin: 0.5rem auto; */
+    margin: auto;
+    background-color: #0D1B2A;
+    color: white;
+    border-top-left-radius: 8px 8px;
+    border-top-right-radius: 8px 8px;
 }
 
 h3 {
-    font-family: Roboto, Arial, sans-serif;
-    margin: 0 auto;
-}
-
-h4 {
-    font-family: Roboto, Arial, sans-serif;
-    margin: 0.5rem auto;
-}
-
-form {
-    display: grid;
-    background-color: lightgray;
-    width: 700px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-}
-
-fieldset {
-    display: grid;
-    grid-gap: 0.5rem;
-    margin: 1rem;
-    padding: 0.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-label {
-    /* Uniform size & alignment */
-    width: 90px;
-    text-align: right;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0px;
+    color: black;
+    margin: 3rem 1rem 1rem 1rem;
   }
 
-textarea {
-    /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
-    font: 1em sans-serif;
-
-    /* Uniform text field size */
-    width: 600px;
-    box-sizing: border-box;
-
-    /* Match form field borders */
-    border: 1px solid rgba(0, 0, 0, 0.1);
-
-    vertical-align: top;
-    /* Provide space to type some text */
-    height: 5em;
-}
-
-button, a.button {
-    margin: auto;
-    display: block;
-    color: #fff;
-    background-color: navy;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.75rem;
-    font-size: 1.2rem;
-    width: 35%;
-    text-align: center;
-}
-
-a.button:hover {
-    color: var(--back_color2);
-    background-color: var(--accent_color1);
-}
-
-button:hover {
-    color: var(--back_color2);
-    background-color: var(--accent_color1);
+p {
+    padding: 0.5rem;
+    margin: 1rem;
 }
 
 nav {
-    display: flex;
-    background-color: var(--back_color3);
-    padding-top: 10px;
-}
-
-nav a {
-    color: var(--accent_color2);
+    flex: 1 1 100%;
     display: block;
-    padding: 25px 20px 0px 20px;
+    color: white;
+    padding: 5px;
+    display: flex;
+    background-color: #333;
+    align-items: center;
 }
-
-p {
-    padding: 1px;
-}
-
-figure {
-    padding: 0;
-    margin: 0;
-}
-
-figcaption{
-    font-size: 0.9rem;
+      
+nav a {
+    flex: 1 1 100%;
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
-
-main img {
-    width: 300px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-    margin: 0 0 1rem 1rem;
+      
+nav a:hover {
+    font-weight: 700;
+    color: black;
+    background-color: yellow;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 div img {
-    width: 200px;
+    width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 0 1rem 1rem;
+    margin: 1rem;
 }
+
+hr { 
+    display: block;
+    margin: 0.5em 1rem 0.5rem 1rem;
+    border-style: inset;
+    border-width: 1px;
+  } 
 
 /*-------------------------------------------------*/
 /* Class Selectors                                 */
@@ -178,195 +116,34 @@ div img {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 10px;
-    width: 800px;
-}
-
-.grid-item {
-    /* background-color: #1D5599; */
-    /* border: 1px solid black; */
-    padding: 10px;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.grid-text1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: justify;
-}
-
-.grid-text2 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    text-align: justify;
-}
-
-.contact h1 {
-    position: inherit;
-    color: var(--back_color3);
-}
-
-.contact div img {
+    /* grid-gap: 10px;
+    width: 1000px; */
+    max-width: 100%;
     margin: 0 auto;
+    grid-template-columns: 2fr 1fr;
 }
 
-.hero {
-    position: relative;
+.rounded-box1 {
+    border-radius: 10px;
+    border: 2px solid #0D1B2A;
+    margin: 0.5rem auto;
+    grid-column: 1 / 2;
+    height: auto;  
 }
 
-/* about.html rafting image*/
-.hero img {
-    width: 100%;
-    height: auto;
+.rounded-box2 {
+    border-radius: 10px;
+    border: 2px solid #0D1B2A;
+    margin: 0.5rem auto;
+    height: auto;  
 }
 
-.sociallinks {
-    position: relative;
-    border: 2px;
-    padding-top: 3px;
-    padding-bottom: 0;
-    height: auto;
-    background-color: var(--accent_color2);
-}
-
-/* sociallinks-img class to control size of social links images in footer */
-.sociallinks img {
-    width: 50px;
-}
-  
-/* sociallinks-img class to control size of social links images in footer */
-.social.wrapper img {
-    width: 10px;
-}
-
-/* This callout is attached to the about.html article */
-.callout {
-    width: 80%;
-    height: auto;
-    padding: 15px;
-    color: var(--accent_color2);
-    background-color: var(--back_color2);
-    /* To position inner box, use absolute */
-    position: absolute;
-    /* Callout location inside of large image */
-    top: 300px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* Image on right side of callout */
-.callout img {
-    float: right;
-    margin: 0rem;
-    border: 1px solid var(--back_color1);
-    padding: 3px;
-    background-color: var(--back_color2);
-    width: 100px;
-    height: auto;
-}
-
-/* adventure & adventure-img classs for Adventure Awaits <div> */
-.adventure {
-    display: flex;
-    justify-content: space-between;
-}
-
-.adventure img {
+.img-left {
     width: 150px;
     height: auto;
-    border: 1px solid var(--back_color2);
+    border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px var(--back_color3);
-    margin: 0;  /* IMPORTANT - Overrides div img */
-}
-
-.team {
-    display: flex;
-    text-align: center;
-    gap: 1.0rem;
-    align-content: space-around;
-}
-
-.team img {
-    width: 250px;
-    height: auto;
-    border: 1px solid var(--back_color2);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--back_color3);
-}
-
-.form-item {
-    display: grid;
-    align-items: center;
-}
-
-.column1 {
-    grid-template-columns: 20% 60%;
-    margin: .5rem 0;
-}
-
-.email {
-    margin: .5rem 0;
-}
-
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    margin: 10px;
-  }
-  
-  caption {
-    caption-side: bottom;
-    padding: 10px;
-    font-weight: bold;
-  }
-  
-  thead,
-  tfoot {
-    color: black;
-    background-color: rgb(228 240 245);
-  }
-  
-  th,
-  td {
-    border: 2px solid rgb(160 160 160);
-    padding: 8px 10px;
-    text-align: center;
-  }
-  
-  tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
-  }
-  
-  th {
-    text-align: center;
-  }
-  
-  td {
-    font-weight: normal;
-  }
-  
-/* Code found on https://blog.hubspot.com/website/remove-underline-from-links-css */
-a:link {
-    text-decoration: none;
-} 
-
-a:visited {
-    text-decoration: none; 
-} 
-
-a:hover {
-    color: var(--back_color2);
-    background-color: var(--accent_color1);
-} 
-
-a:active { 
-    text-decoration: none; 
+    box-shadow: 0 0 30px gray;
+    float: left;
+    margin: 1rem;
 }
