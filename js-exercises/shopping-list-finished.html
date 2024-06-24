@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping list example</title>
+        <style>
+        li {
+            margin-bottom: 10px;
+        }
+
+        li button {
+            font-size: 12px;
+            margin-left: 20px;
+            color: #666;
+        }
+        </style>
+    </head>
+
+    <body>
+        <h1>My shopping list</h1>
+
+        <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button>Add item</button>
+        </div>
+
+        <ul>
+        </ul>
+
+        <script>
+            const list   = document.querySelector('ul');
+            const input  = document.querySelector('input');
+            const button = document.querySelector('button');
+
+            button.addEventListener('click', () => {
+                const myItem = input.value;
+                input.value = '';
+
+                const listItem = document.createElement('li');
+                const listText = document.createElement('span');
+                const listBtn  = document.createElement('button');
+
+                listItem.appendChild(listText);
+                listText.textContent = myItem;
+                listItem.appendChild(listBtn);
+                listBtn.textContent = 'Delete';
+                list.appendChild(listItem);
+
+                listBtn.addEventListener('click', () => {
+                list.removeChild(listItem);
+                });
+
+                input.focus();
+                // Added code -------------------------
+                const article = document.querySelector('article');
+                article.innerHTML = 'innerHTML supports <strong>HTML</strong>tags. The textContent property does not.';
+                article.style.textAlign = 'right';
+                article.setAttribute('class', 'active');
+                const paragraph = document.createElement('p');
+                article.appendChild(paragraph);
+                article.append(paragraph, 'Hello World Addition!');
+                article.removeChild(paragraph);
+                article.remove();
+            });
+
+        </script>
+
+    </body>
+
+    <div id="__genieContainer" style="all: initial;">
+        <style>
+            @import "moz-extension://78c07708-1b86-4d7b-9c7d-20dab3642273/built/inject.css";
+        </style>
+        <div id="rmnGenieWrappingDiv" style="right: 360px !important; display: none;">
+            <!----> 
+            <div data-v-4b8d7254="" class="bbb-loading-dots" style="display: none !important;">
+                <div data-v-4b8d7254="" class="start-state">
+                </div>
+                <div data-v-4b8d7254="" class="start-state">
+                </div>
+                <div data-v-4b8d7254="" class="start-state">
+                </div>
+            </div>
+            <div id="component">
+            </div>
+        </div>
+    </div>
+</html>
