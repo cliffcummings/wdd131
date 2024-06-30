@@ -3,7 +3,7 @@
     header {
 		display: flex;
 		/* flex-direction: defined in #layout ID; */
-		align-items: right;
+		align-items: flex-end;
 	    justify-content: space-between;
 	}
 	
