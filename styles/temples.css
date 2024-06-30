@@ -31,7 +31,9 @@ section {
 
 /* padding: 0px keeps nav-bar at bottom of header */
 header {
-    display: grid;
+    display: flex;
+    /* flex-direction: defined in layout ID; */
+    justify-content: space-between;
     margin: 0 auto;
     background-color: var(--back_color2);
     border: 1px solid var(--back_color2);
@@ -66,7 +68,6 @@ nav ul {
 	list-style-type: none;
 }
 nav a {
-    /* flex-direction: row; */
 	display: block;
 	color: #fff;
 	text-align: left;
@@ -85,12 +86,21 @@ nav a:hover {
 /* Item Selectors                                  */
 /*-------------------------------------------------*/
 /* Mobile View ***************/
+#layout {
+    /* display: flex defined in header tag */
+    flex-direction: row;
+}
+
+#layout.show {
+    /* display: flex defined in header tag */
+    flex-direction: column;
+}
+
 #menu {
     display: block;
 	font-size: 1.5rem;
     text-decoration: none;
     padding: .5rem .75rem;
-	/* background-color: lightgray; */
 	background-color: red;
 	color: yellow;
 }
@@ -105,12 +115,8 @@ nav a:hover {
 	content: "❎";
 }
 #menu.show .hide {
-    display: inline-block;
-}
-
-/* #menu.open .hamburger {
     display: none;
-} */
+}
 
 /*-------------------------------------------------*/
 /* Class Selectors                                 */
@@ -121,8 +127,6 @@ nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 50px;
     place-items: center;
-    /* max-width: 100%;
-    margin: 0 auto; */
 }
 
 .stdlf {
@@ -132,10 +136,8 @@ nav a:hover {
 }
 
 .navigation {
-	display: flex;
-	flex-direction: column;
 	list-style: none;
-	background-color: #333;
+	background-color: green;
 	color: #fff;
 }
 .navigation a {
@@ -162,18 +164,9 @@ nav a:hover {
 	font-weight: 700;
 }
 
-.hamburger {
-    display: inline-block;
-}
-
 .hide {
-    display: none;
+    flex-direction: column;
 }
-
-/* just a wayfinding symbol for the user */
-/* .active::before { 
-	content: "📍";  
-} */
 
 .roboto-thin {
     font-family: "Roboto", sans-serif;

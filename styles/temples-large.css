@@ -1,9 +1,9 @@
-
 /* Larger Views ******************************/
 @media screen and (min-width: 780px) {
     header {
 		display: flex;
-		align-items: center;
+		/* flex-direction: defined in #layout ID; */
+		align-items: right;
 	    justify-content: space-between;
 	}
 	
@@ -25,13 +25,19 @@
         display: block;
 		flex: 1 1 100%;
 	} */
-    
+	
+	#layout {
+		/* display: flex defined in header tag */
+		flex-direction: row;
+	}
+
      /* hide hamburger button */
 	#menu {
 		display: none;
 	}
 
 	.navigation {
+		display: flex;
 		flex-direction: row;
 	}
 	

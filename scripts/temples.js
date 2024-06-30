@@ -6,7 +6,8 @@ const navigation = document.querySelector('.navigation')
 // Using the ".show" class definition from templs.css
 //--------------------------------------------------------
 menu.addEventListener('click', () => {
-	navigation.classList.toggle('show');
+	// menu.classList.toggle('show');
+	// layout.classList.toggle('show');
 	toggleMenuButton();
 });
 // ABOVE - Add a click event listender to the hamburger button and use a callback
@@ -14,4 +15,5 @@ menu.addEventListener('click', () => {
 
 function toggleMenuButton() {
 	menu.classList.toggle('show');
+	layout.classList.toggle('show');
 };	
