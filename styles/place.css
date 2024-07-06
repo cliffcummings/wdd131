@@ -30,9 +30,9 @@ body {
 
 /* padding: 0px keeps nav-bar at bottom of header */
 header {
+    background-color: var(--back_color2);
     padding: 2rem;
     color: white;
-    background-color: var(--back_color2);
     border: 10px solid var(--back_color2);
 }
 
@@ -82,6 +82,15 @@ figcaption {
     margin: 0.1rem;
     text-align: left;
     /* background-color: greenyellow;  TODO: DEBUG */
+}
+
+/* https://www.iconfinder.com/icons/1530374/weather_day_sand_sandstorm_sun_icon */
+.weather h2::after {
+    content: url(/images/1530374_weather_day_sand_sandstorm_sun_icon.svg);
+    display: block;
+    text-align: center;
+    width: 15%;
+    margin: auto;
 }
 
 /* Centers image when placed inside of a div */

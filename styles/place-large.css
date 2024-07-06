@@ -52,19 +52,15 @@
         background-color:lightblue;
         color: black;
         position: absolute;
-        right: 10%;
+        right: 55%;
         bottom: 75%;
-        width: 100%;
+        width: 50%;
         text-align: left;
         padding: 0 0 0 1rem;
     }
     
-    .icon-img {
-        position: absolute;
-        right: 5%;
-        bottom: 72%;
-        margin-left: 2rem;
-        width: 10vh;
+    .weather h2::after {
+        display: none;
     }
 }
   
