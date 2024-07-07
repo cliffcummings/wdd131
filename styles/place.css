@@ -86,7 +86,7 @@ figcaption {
 
 /* https://www.iconfinder.com/icons/1530374/weather_day_sand_sandstorm_sun_icon */
 .weather h2::after {
-    content: url(/images/weather.svg);
+    content: url(/images/weather-icon.svg);
     display: block;
     width: 15%;
     margin: auto;
