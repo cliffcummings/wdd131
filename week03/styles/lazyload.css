@@ -1,0 +1,95 @@
+:root {
+    --back_color1: #0D1B2A;
+    --back_color2: #1D5599;
+    --back_color3: #57849C;
+    --accent_color1: #7FC6DE;
+    --accent_color2: #EFEFEF;
+    --wild_red: #FF0000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    /* text-align: center; */
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* padding: 0px keeps nav-bar at bottom of header */
+header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--back_color2);
+    border: 1px solid var(--back_color2);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    color: white;
+    background-color: var(--back_color1);
+    border-top: 1px solid var(--back_color1);
+    border-bottom: 4px solid var(--back_color1);
+    text-align: center;
+}
+
+main {
+    max-width: 1000px;
+}
+
+img {
+    display: block;
+    background: black;
+    animation: fade 15s;
+    margin: 1rem auto;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+figcaption {
+    text-align: center;
+}
+
+/*-------------------------------------------------*/
+/* Class Selectors                                 */
+/*-------------------------------------------------*/
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
