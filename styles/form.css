@@ -55,6 +55,31 @@ footer {
     text-align: center;
 }
 
+label {
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: left;
+    /* margin-top: 0rem; */
+    /* margin-bottom: .2rem; */
+    /* background-color: red; */
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+    margin: 10px;
+}
+
+.features label {
+    font-size: 1.1rem;
+}
+
+/* input {
+    font-weight: 100;
+    font-size: 3rem;
+} */
+#feature1, #feature2 {
+    font-weight: 100;
+}
 header, main, footer {
     min-width: 400px;
 }
@@ -64,6 +89,7 @@ textarea {
     background-color: white;
     width: 100%;
     font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
 }
 
 .pad {
@@ -79,7 +105,12 @@ textarea {
 .features p {
     font-style: italic;
     font-weight: bold;
+    font-size: 1.2rem;
     margin-bottom: 0.2rem;
+}
+
+.textreview {
+    margin-top: 1rem;
 }
 
 /* https://stackoverflow.com/questions/463785/place-radio-button-label-above-using-css */
@@ -99,20 +130,26 @@ textarea {
     font-weight: 700;
     background-color: var(--accent_color3);
     border-width: 1px;
-    margin: 0.5rem auto;
+    margin: 1rem auto;
 }
 
 #prodName, #installDate, #review, #name, #submit {
+    font-size: 1.2rem;
     padding: .2rem;
     width: 100%;
 }
 
-input[type=text] {
-    background-color: white;
-    /* background-color: #efac3e; */
+#installDate {
+    margin-bottom: 1rem;
 }
 
-input [type="checkbox"] {
-    background-color: blue;
+input[type=text] {
+    /* background-color: white; */
+    background-color: #efac3e;
+    font-size: 1.2rem;
 }
+
+/* input [type="checkbox"] {
+    background-color: blue;
+} */
 

@@ -48,12 +48,14 @@
                 <label for="rating5">☆☆☆☆☆<br><input type="radio" id="rating5" name="stars" value="5star" required></label>
             </div>
 
-            <h2>Date of Installation</h2>
-                <label for="installDate"></label>
+            <div id="installDate">
+            <!-- <h2>Date of Installation</h2> -->
+                <label for="installDate">Date of Installation</label>
                 <input type="date" id="installDate" name="installDate">
+            </div>
 
             <div class="features">
-                <h2>Which features did you find useful in the product?</h2>
+                <label>Which features did you find useful in the product?</label>
                 <p>(Check all that apply)?</p>
 
                 <input type="checkbox" id="feature1" name="feature1" value="">
@@ -69,19 +71,23 @@
                 <label for="feature4">Design</label><br>
             </div>
 
-            <h2>Written Review (optional)</h2>
-            <label for="review"></label>
-            <textarea id="review" name="review" rows="4" placeholder=""></textarea>
+            <!-- <h2>Written Review (optional)</h2> -->
+            <div class="textreview">
+                <label for="review">Written Review (optional)</label>
+                <textarea id="review" name="review" rows="4" placeholder=""></textarea>
+            </div>
 
             <!-- TODO - DEBUG -->
             <!-- <br><input type="text" name="name"><br> -->
 
-            <h2>You Name (optional)</h2>
+            <!-- <h2>You Name (optional)</h2> -->
             <!-- <label for="name"></label>
             <textarea id="name" name="name" rows="1" placeholder=""></textarea><br> -->
 
-            <label for="name"></label>
-            <input type="text" id="name" name="name" value="">
+            <div class="textreview">
+                <label for="name">You Name (optional)</label>
+                <input type="text" id="name" name="name" value="">
+            </div>
 
             <input type="submit" name="submit" id="submit" value="Post Review">
         </form>
