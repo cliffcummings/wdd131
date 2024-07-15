@@ -1,4 +1,4 @@
-console.log("*** Reading form.js - TODO DEBUG ***");
+// console.log("*** Reading form.js - TODO DEBUG ***");
 const products = [
     {
       id: "fc-1888",
@@ -28,14 +28,14 @@ const products = [
     }
   ];
 
-console.log("*** Reading form.js #2 - TODO DEBUG ***");
+// console.log("*** Reading form.js #2 - TODO DEBUG ***");
 
 
 products.forEach(product => {
   const productHTML = document.createElement("option");
   productHTML.setAttribute("value", `${product.name}`);
-  console.log(product.name);
+  // console.log(product.name);
   productHTML.innerHTML = product.name;
-  console.log(productHTML);
+  // console.log(productHTML);
   document.getElementById("prodName").appendChild(productHTML);
 });
