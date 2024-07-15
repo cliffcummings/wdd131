@@ -144,8 +144,8 @@ textarea {
 }
 
 input[type=text] {
-    /* background-color: white; */
-    background-color: #efac3e;
+    background-color: white;
+    /* background-color: #efac3e; */
     font-size: 1.2rem;
 }
 
