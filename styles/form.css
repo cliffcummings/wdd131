@@ -1,0 +1,117 @@
+:root {
+    --back_color1: #0D1B2A;
+    --back_color2: #1D5599;
+    --back_color3: #57849C;
+    --accent_color1: #7FC6DE;
+    --accent_color2: #DFDFDF;
+    --accent_color3: #EFEFEF;
+    --wild_red: #FF0000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* padding: 0px keeps nav-bar at bottom of header */
+header {
+    background-color: var(--back_color1);
+    padding: 1rem;
+    color: white;
+    border: 5px solid var(--back_color1);
+}
+
+/* justify-content: center; */
+/* max-width: 1000px; */
+main {
+    position: relative;
+    padding: 1rem;
+    background-color: var(--accent_color2);
+    min-width: 400px;
+}
+
+footer {
+    padding: 1rem;
+    color: white;
+    background-color: var(--back_color1);
+    text-align: center;
+}
+
+header, main, footer {
+    min-width: 400px;
+}
+
+textarea {
+    /* background-color: red; */
+    background-color: white;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+.pad {
+    padding-bottom: 1rem;
+}
+
+.stars label {
+    float: left;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.features p {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+/* https://stackoverflow.com/questions/463785/place-radio-button-label-above-using-css */
+.stars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+
+    /* For Debug */
+    /* background-color: aqua;
+    border: 5px solid purple; */
+}
+
+#submit {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: var(--accent_color3);
+    border-width: 1px;
+    margin: 0.5rem auto;
+}
+
+#prodName, #install, #review, #submit {
+    padding: .2rem;
+    width: 100%;
+}
+
+input[type=text] {
+    background-color: #efac3e;
+}
+
+input [type="checkbox"] {
+    background-color: blue;
+}
+
