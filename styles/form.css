@@ -102,7 +102,7 @@ textarea {
     margin: 0.5rem auto;
 }
 
-#prodName, #install, #review, #submit {
+#prodName, #install, #review, #name, #submit {
     padding: .2rem;
     width: 100%;
 }
