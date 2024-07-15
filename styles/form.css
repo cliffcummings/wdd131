@@ -102,13 +102,14 @@ textarea {
     margin: 0.5rem auto;
 }
 
-#prodName, #install, #review, #name, #submit {
+#prodName, #installDate, #review, #name, #submit {
     padding: .2rem;
     width: 100%;
 }
 
 input[type=text] {
-    background-color: #efac3e;
+    background-color: white;
+    /* background-color: #efac3e; */
 }
 
 input [type="checkbox"] {
