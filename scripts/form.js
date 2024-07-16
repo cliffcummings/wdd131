@@ -1,4 +1,6 @@
-// console.log("*** Reading form.js - TODO DEBUG ***");
+// const numberReviews = JSON.parse(getStorage('reviewCnt') || 0);
+// textview.textContent = `Number of reviews submitted: ${numberReviews}`;
+
 const products = [
     {
       id: "fc-1888",
@@ -28,14 +30,18 @@ const products = [
     }
   ];
 
-// console.log("*** Reading form.js #2 - TODO DEBUG ***");
-
-
 products.forEach(product => {
-  const productHTML = document.createElement("option");
+  let productHTML = document.createElement("option");
   productHTML.setAttribute("value", `${product.name}`);
-  // console.log(product.name);
   productHTML.innerHTML = product.name;
-  // console.log(productHTML);
   document.getElementById("prodName").appendChild(productHTML);
 });
+
+//-------------------------------------------------------------------------------
+// Number of Reviews - local storage (numberReviews-ls)
+//-------------------------------------------------------------------------------
+let numberReviews = Number(window.localStorage.getItem("numberReviews-ls"));
+numberReviews.textContent = `Number of reviews submitted: ${numberReviews}`;
+
+numberReviews++;
+localStorage.setItem("numberReviews-ls", numberReviews);
