@@ -17,7 +17,7 @@
 }
 
 h1 {
-    font: arial;
+    font: arimo;
     font-size: 1.1rem;
     text-align: center;
 }
@@ -69,4 +69,13 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: auto;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name <weight>: Use a value from 400 to 700 */
+
+.arimo {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal; */
 }
