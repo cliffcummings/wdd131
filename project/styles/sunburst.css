@@ -16,13 +16,14 @@
     /* max-width: 600px; */
 }
 
-h1 .arimo {
+h1 {
     /* font-style: arimo; */
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
+    margin: auto;
 }
 
-h2 .arimo {
+h2 {
     font-size: 1rem;
     text-align: left;
     margin-top: 1rem;
@@ -75,4 +76,8 @@ footer {
 
 .arimo {
   font-family: "Arimo", sans-serif;
+}
+
+.roboto {
+    font-family: Arial, Helvetica, sans-serif;
 }
