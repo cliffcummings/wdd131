@@ -16,13 +16,13 @@
     /* max-width: 600px; */
 }
 
-h1 {
-    font: arimo;
+h1 .arimo {
+    /* font-style: arimo; */
     font-size: 1.1rem;
     text-align: center;
 }
 
-h2 {
+h2 .arimo {
     font-size: 1rem;
     text-align: left;
     margin-top: 1rem;
