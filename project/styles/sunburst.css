@@ -81,3 +81,7 @@ footer {
 .roboto {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.indent {
+    padding-left: 2rem;
+}
