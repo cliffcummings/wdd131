@@ -10,13 +10,13 @@
 }
 
 * {
-    margin: auto;
+    margin-bottom: auto;
     padding: 0;
     box-sizing: border-box;
-    /* max-width: 600px; */
 }
 
 h1 {
+    margin-top: 0;
     font-size: 1.2rem;
     text-align: center;
 }
@@ -30,45 +30,74 @@ h2 {
 }
 
 body {
+    min-width: 400px;
     background-color: white;
     font-family: Roboto, sans-serif;
 }
 
 /* padding: 0px keeps nav-bar at bottom of header */
 header {
-    /* background-color: var(--back_color1); */
-    background-color: white;
-    padding: 1rem;
+    display: block;
+    background-color: lightblue;
+    /* padding: 0px; */
     color: var(--sunburst_red);
     border: none;
+    margin: none;
+    width: auto;
+    text-align: center;
 }
 
 img {
     justify-content: center;
-    margin: auto;
+    /* margin: 0; */
+}
+
+header .center {
+    width: 400px;
+    height: auto;
 }
 
 main {
     position: relative;
     padding: 1rem;
-    background-color: white;
-    /* background-color: var(--accent_color2); */
+    /* background-color: white; */
+    background-color: var(--accent_color2);
     min-width: 400px;
 }
 
 footer {
     padding: 1rem;
-    color: white;
+    margin-bottom: 3rem;
+    color: orange;
     background-color: var(--back_color1);
     text-align: center;
 }
 
-img {
-    margin: 1rem;
+/* Without unordered list, use flex-direction: row */
+nav {
+    justify-content:center;
 }
 
-#navmenu {
-    padding-left: 1rem;
+nav ul li {
+    display: block;
+    flex: 1 1 100%;
+    background-color: yellow;
+    margin: 0 1rem 1rem 1rem;
+}
+
+/* #navmenu {
+    padding-left: 0rem;
+} */
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.navpane{
+    display: flexbox;
+    background-color: blueviolet;
+    margin-bottom: 5rem;
 }
 
 /* https://www.w3schools.com/howto/howto_css_image_center.asp */
@@ -77,6 +106,15 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: auto;
+    text-align: center;
+}
+
+#css-src {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: center;
 }
 
 /* <uniquifier>: Use a unique and descriptive class name <weight>: Use a value from 400 to 700 */
