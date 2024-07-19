@@ -10,17 +10,15 @@
 }
 
 * {
-	margin: auto;
-	padding: 0;
-	box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
     /* max-width: 600px; */
 }
 
 h1 {
-    /* font-style: arimo; */
     font-size: 1.2rem;
     text-align: center;
-    margin: auto;
 }
 
 h2 {
@@ -64,6 +62,14 @@ footer {
     text-align: center;
 }
 
+img {
+    margin: 1rem;
+}
+
+#navmenu {
+    padding-left: 1rem;
+}
+
 /* https://www.w3schools.com/howto/howto_css_image_center.asp */
 .center {
     display: block;
@@ -75,7 +81,7 @@ footer {
 /* <uniquifier>: Use a unique and descriptive class name <weight>: Use a value from 400 to 700 */
 
 .arimo {
-  font-family: "Arimo", sans-serif;
+    font-family: "Arimo", sans-serif;
 }
 
 .roboto {
