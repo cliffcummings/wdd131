@@ -1400,11 +1400,11 @@ const papers = [
     },  
 ];
 
-products.forEach(product => {
-  let productHTML = document.createElement("option");
-  productHTML.setAttribute("value", `${product.name}`);
-  productHTML.innerHTML = product.name;
-  document.getElementById("prodName").appendChild(productHTML);
+papers.forEach(paper => {
+//   let productHTML = document.createElement("option");
+//   productHTML.setAttribute("value", `${product.name}`);
+//   productHTML.innerHTML = product.name;
+//   document.getElementById("prodName").appendChild(productHTML);
 });
 
 //-------------------------------------------------------------------------------
@@ -1444,30 +1444,30 @@ function calculateWindChill(T, V) {
 //     chill = calculateWindChill(temperature, wind);
 // }
 
-document.getElementById("temp").innerHTML = temperature + "&deg;C";
-document.getElementById("condition").innerHTML = conditions;
-document.getElementById("wind").innerHTML = wind + " km/h";
-// Set initial chill string to be "N/A"
-document.getElementById("chill").innerHTML = "N/A";
+// document.getElementById("temp").innerHTML = temperature + "&deg;C";
+// document.getElementById("condition").innerHTML = conditions;
+// document.getElementById("wind").innerHTML = wind + " km/h";
+// // Set initial chill string to be "N/A"
+// document.getElementById("chill").innerHTML = "N/A";
 
 // const chill = calculateWindChill(temperature,wind);
 // document.getElementById("chill").innerText = chill.toFixed(2);
 
-document.getElementById("chill-button").addEventListener("click", () => {
-    // Calculate and update the "chill" value
-    let chill = "N/A";
-    document.getElementById("chill").innerHTML = chill;
+// document.getElementById("chill-button").addEventListener("click", () => {
+//     // Calculate and update the "chill" value
+//     let chill = "N/A";
+//     document.getElementById("chill").innerHTML = chill;
 
-    // console.log("Chill1 = " + chill);           // TODO DEBUG
-    if (temperature <= 50 && wind > 3) {
-        chill = calculateWindChill(temperature, wind);
-        // console.log("Chill2 = " + chill);       // TODO DEBUG
-        const stringChill = String(chill.toFixed(2));
-        // console.log("Chill = " + stringChill);  // TODO DEBUG
-        document.getElementById("chill").innerHTML = String(chill.toFixed(2)) + "&deg;C";
-    } else {
-        // console.log("Chill3 = " + chill);       // TODO DEBUG
-        chill = "N/A"
-        document.getElementById("chill").innerHTML = chill;
-    }
-})
+//     // console.log("Chill1 = " + chill);           // TODO DEBUG
+//     if (temperature <= 50 && wind > 3) {
+//         chill = calculateWindChill(temperature, wind);
+//         // console.log("Chill2 = " + chill);       // TODO DEBUG
+//         const stringChill = String(chill.toFixed(2));
+//         // console.log("Chill = " + stringChill);  // TODO DEBUG
+//         document.getElementById("chill").innerHTML = String(chill.toFixed(2)) + "&deg;C";
+//     } else {
+//         // console.log("Chill3 = " + chill);       // TODO DEBUG
+//         chill = "N/A"
+//         document.getElementById("chill").innerHTML = chill;
+//     }
+// })
