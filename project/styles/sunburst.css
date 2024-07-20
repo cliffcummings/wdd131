@@ -30,8 +30,9 @@ h2 {
 }
 
 body {
-    min-width: 390px;
-    background-color: white;
+    /* min-width: 390px; */
+    /* width: 100%; */
+    background-color: lightcyan;
     font-family: Roboto, sans-serif;
 }
 
@@ -39,7 +40,6 @@ body {
 header {
     display: block;
     background-color: lightblue;
-    /* padding: 0px; */
     color: var(--sunburst_red);
     border: none;
     margin: 0;
@@ -60,7 +60,8 @@ main {
     padding: 1rem;
     /* background-color: white; */
     background-color: var(--accent_color2);
-    min-width: 400px;
+    /* min-width: 400px; */
+    width: 100%;
 }
 
 footer {

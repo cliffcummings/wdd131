@@ -1,19 +1,8 @@
 /* Larger Views ******************************/
 @media screen and (min-width: 400px) {
 
-    /* flex-direction: defined in #layout ID; */
-    header {
-		display: block;
-        margin: auto;
-        text-align: center;
-        overflow: hidden;
-	}
-
 	nav ul li {
-        display: block;
-		flex: 1 1 100%;
         background-color: aqua;
-        margin: 0 1rem 1rem 1rem;
     }
 
     .navigation a:hover {
@@ -23,8 +12,6 @@
     }
     
     .navpane{
-        display: flexbox;
         background-color: red;
-        margin-bottom: 5rem;
     }
 }
