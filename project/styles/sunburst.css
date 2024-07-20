@@ -107,6 +107,14 @@ nav ul li {
     text-align: center;
 }
 
+.contact a {
+    color: yellow;
+}
+
+.contact a:hover {
+    color: lightblue;
+}
+
 #css-src {
     display: block;
     margin-left: auto;
