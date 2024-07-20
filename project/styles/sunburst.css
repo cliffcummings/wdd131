@@ -107,6 +107,13 @@ nav ul li {
     text-align: center;
 }
 
+.debug {
+    color: #0D1B2A;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 .contact a {
     color: yellow;
 }
@@ -116,11 +123,7 @@ nav ul li {
 }
 
 #css-src {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    text-align: center;
+    margin-top: 0;
 }
 
 .arimo {

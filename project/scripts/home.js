@@ -7,10 +7,10 @@ function displayWindowInfo(){
     let w = Number(document.documentElement.clientWidth);
 
     if (w > 400) {
-        document.getElementById("css-src").innerHTML = `<h2 id="css-src">Uses sunburst-large.css</h2>`;
+        document.getElementById("css-src").innerHTML = `<p id="css-src">Uses sunburst-large.css</p>`;
         // console.log("Large size!");
     } else {
-        document.getElementById("css-src").innerHTML = `<h2 id="css-src">Uses sunburst.css</h2>`;
+        document.getElementById("css-src").innerHTML = `<p id="css-src">Uses sunburst.css</p>`;
         // console.log("Small size!");
     };
         
