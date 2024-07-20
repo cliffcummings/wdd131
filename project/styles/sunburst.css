@@ -30,7 +30,7 @@ h2 {
 }
 
 body {
-    min-width: 400px;
+    min-width: 390px;
     background-color: white;
     font-family: Roboto, sans-serif;
 }
@@ -43,13 +43,11 @@ header {
     color: var(--sunburst_red);
     border: none;
     margin: none;
-    width: auto;
     text-align: center;
 }
 
 img {
     justify-content: center;
-    /* margin: 0; */
 }
 
 header .center {
@@ -116,8 +114,6 @@ nav ul li {
     width: auto;
     text-align: center;
 }
-
-/* <uniquifier>: Use a unique and descriptive class name <weight>: Use a value from 400 to 700 */
 
 .arimo {
     font-family: "Arimo", sans-serif;
