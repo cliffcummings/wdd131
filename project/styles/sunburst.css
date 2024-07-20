@@ -42,7 +42,7 @@ header {
     /* padding: 0px; */
     color: var(--sunburst_red);
     border: none;
-    margin: none;
+    margin: 0;
     text-align: center;
 }
 
@@ -90,10 +90,11 @@ nav ul li {
 .navigation {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
 }
 
 .navpane{
-    display: flexbox;
     background-color: blueviolet;
     margin-bottom: 5rem;
 }
