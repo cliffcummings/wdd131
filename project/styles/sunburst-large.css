@@ -1,5 +1,5 @@
 /* Larger Views ******************************/
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 550px) {
 
 	nav ul li {
         background-color: aqua;
@@ -13,5 +13,12 @@
     
     .navpane{
         background-color: red;
+    }
+    
+    .container {
+        display:grid;
+        grid-template-columns: 1fr 5fr 1fr 1fr;
+        grid-gap: 10px;
+        place-items: center;
     }
 }

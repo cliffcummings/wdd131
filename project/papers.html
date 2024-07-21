@@ -17,15 +17,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
-    <script src="scripts/sunburst.js" defer></script>
+    <script src="scripts/papers.js" defer></script>
     <script src="scripts/home.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <title>Sunburst Papers</title>
 </head>
 <body>
     <header>
-        <img class="center" src="images/Sunburst_Logo1_413_139.webp" width="400" height="134" alt="Sunburst Design Logo">
-        <h1 class="roboto">World Class SystemVerilog &amp; UVM Training</h1>
+        <div class="sunburst-logo">
+            <a href="./index.html">
+            <img class="center" src="images/Sunburst_Logo1_413_139.webp" width="400" height="134" alt="Sunburst Design Logo">
+            </a>
+            <h1 class="roboto">World Class SystemVerilog &amp; UVM Training</h1>
+        </div>
 
         <div class="debug">
             <p>DEBUG: Papers papers.html page</p>
@@ -48,24 +52,43 @@
     </header>
     
     <main>
-        <div>
-            <h2>
-                Sunbrust Design - PAPERS Page
-            </h2>
-
-            <p>
-                Content
-            </p>
+        <h2>Cliff's Technical Notes</h2>
+        
+        <div class="notes-container">
+            <table id="cliffnotes">
+            </table>
         </div>
 
-        <div>
-            <h2>
-                Sub-Topic
-            </h2>
+        <h2>Cliff's Papers</h2>
+        
+        <div class="papers-container">
+            <table id="cliffpapers">
+            </table>
+        </div>
+        
+        <h2>Cliff's DAC Conference Presentations</h2>
+        
+        <div class="dac-container">
+            <table id="dacpresentations">
+            </table>
+        </div>
 
-            <p>
-                Content
-            </p>
+        <h2>Recommended Papers</h2>
+        <p>These papers are hosted with permission of the respective authors.
+            The authors may remove permission to host these papers at any time.
+        </p>
+
+        <div class="rec-container">
+            <table id="recommends">
+            </table>
+        </div>
+
+        <h2>Other Published Papers</h2>
+        <p>Not available for download</p>
+    
+        <div class="others-container">
+            <table id="nonpublished">
+            </table>
         </div>
             
     </main>

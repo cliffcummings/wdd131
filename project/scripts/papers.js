@@ -1,82 +1,56 @@
-const papers = [
+const rootUrl = "www.sunburst-design.com/papers/";
+
+const cnotes = [
     {
-        conf:        "NA",
-        year:        "NA",
-        confLoc:     "NA",
         title:       "Why Use Classes to Represent UVM Transactions?",
         shorttitle:  "Why Use Classes for Transactions?",
         url:         "Cummings_Why_Use_Classes_for_UVM_Transactions.pdf",
         rev:         "1.0",
         revdate:     "June 2015",
         tags:        ["UVM", "SV"],
-        award:       "NA",
-        awardtype:   "NA",
         cliffnote:   "#5",
         training:    "NA",
         note:        "NA",
         author:      "NA",
-        xtraUrl:     "NA",
-        xtra:        "NA",
     },
     
     {
-        conf:        "NA",
-        year:        "NA",
-        confLoc:     "NA",
         title:       "13 Reason Why UVM and OVM are Hard to Learn",
         shorttitle:  "13 Reason Why UVM and OVM are Hard to Learn",
         url:         "Cummings_Why_UVM_Is_Hard_To_Learn.pdf",
         rev:         "1.1",
         revdate:     "June 2022",
         tags:        ["UVM", "SV"],
-        award:       "NA",
-        awardtype:   "NA",
         cliffnote:   "#4",
         training:    "NA",
         note:        "NA",
         author:      "NA",
-        xtraUrl:     "NA",
-        xtra:        "NA",
     },
     
     {
-        conf:        "NA",
-        year:        "NA",
-        confLoc:     "NA",
         title:       "Are Advanced Verification Methodologies Required to Test FPGA Designs?",
         shorttitle:  "Are Advanced Verification Methodologies Required to Test FPGA Designs?",
         url:         "Cummings_FPGAVerification.pdf",
         rev:         "1.0",
         revdate:     "Nov 2012",
         tags:        ["UVM", "SV"],
-        award:       "NA",
-        awardtype:   "NA",
         cliffnote:   "#3",
         training:    "NA",
         note:        "NA",
         author:      "NA",
-        xtraUrl:     "NA",
-        xtra:        "NA",
     },
     
     {
-        conf:        "NA",
-        year:        "NA",
-        confLoc:     "NA",
         title:       "Common Mistakes In Technical Texts",
         shorttitle:  "Common Mistakes In Technical Texts",
         url:         "Technical_Text_Mistakes.pdf",
         rev:         "1.1",
         revdate:     "Mar 2009",
         tags:        ["UVM", "SV"],
-        award:       "NA",
-        awardtype:   "NA",
         cliffnote:   "#2",
         training:    "NA",
         note:        "NA",
         author:      "NA",
-        xtraUrl:     "NA",
-        xtra:        "NA",
     },
     
     {
@@ -89,8 +63,6 @@ const papers = [
         rev:         "1.0",
         revdate:     "Mar 2007",
         tags:        ["UVM", "SV"],
-        award:       "NA",
-        awardtype:   "NA",
         cliffnote:   "#1",
         training:    "NA",
         note:        "NA",
@@ -98,120 +70,22 @@ const papers = [
         xtraUrl:     "NA",
         xtra:        "NA",
     },
-    
-    {
-        conf:        "DAC",
-        year:        "2013",
-        confLoc:     "NA",
-        title:       "The New SystemVerilog-2012 Standard",
-        shorttitle:  "The New SystemVerilog-2012 Standard",
-        url:         "SV2012_SunburstDesign_DAC2013_bw.pdf",
-        rev:         "1.0",
-        revdate:     "Jun 2013",
-        tags:        ["UVM", "SV"],
-        award:       "NA",
-        awardtype:   "NA",
-        cliffnote:   "NA",
-        training:    "NA",
-        note:        "NA",
-        author:      "Cliff",
-        xtraUrl:     "NA",
-        xtra:        "DAC Slides",
-    },
-    
-    {
-        conf:        "DAC",
-        year:        "2009",
-        confLoc:     "NA",
-        title:       "SystemVerilog-2009 Update - Part 1 - DAC Slides (color)",
-        shorttitle:  "SV-2009 Update - Part 1",
-        url:         "DAC2009_SystemVerilog_Update_Part1_SunburstDesign.pdf",
-        rev:         "1.1",
-        revdate:     "Aug 2009",
-        tags:        ["UVM", "SV"],
-        award:       "NA",
-        awardtype:   "NA",
-        cliffnote:   "NA",
-        training:    "NA",
-        note:        "NA",
-        author:      "Cliff",
-        xtraUrl:     "NA",
-        xtra:        "NA",
-    },
-    
-    {
-        conf:        "DAC",
-        year:        "2009",
-        confLoc:     "NA",
-        title:       "SystemVerilog-2009 Update - Part 1 - DAC Slides (bw)",
-        shorttitle:  "SV-2009 Update - Part 1 (bw)",
-        url:         "DAC2009_SystemVerilog_Update_Part1_SunburstDesign_BW.pdf",
-        rev:         "1.1",
-        revdate:     "Aug 2009",
-        tags:        ["UVM", "SV"],
-        award:       "NA",
-        awardtype:   "NA",
-        cliffnote:   "NA",
-        training:    "NA",
-        note:        "NA",
-        author:      "Cliff",
-        xtraUrl:     "NA",
-        xtra:        "NA",
-    },
-    
-    {
-        conf:        "DAC",
-        year:        "2009",
-        confLoc:     "NA",
-        title:       "SystemVerilog-2009 Update - Part 2 - DAC Slides (color)",
-        shorttitle:  "SV-2009 Update - Part 2",
-        url:         "DAC2009_SystemVerilog_Update_Part2_SutherlandHDL.pdf",
-        rev:         "1.1",
-        revdate:     "Aug 2009",
-        tags:        ["UVM", "SV"],
-        award:       "NA",
-        awardtype:   "NA",
-        cliffnote:   "NA",
-        training:    "NA",
-        note:        "NA",
-        author:      "Stu",
-        xtraUrl:     "NA",
-        xtra:        "NA",
-    },
-    
-    {
-        conf:        "DAC",
-        year:        "2009",
-        confLoc:     "NA",
-        title:       "SystemVerilog-2009 Update - Part 2 - DAC Slides",
-        shorttitle:  "SV-2009 Update - Part 2",
-        url:         "DAC2009_SystemVerilog_Update_Part2_SutherlandHDL.pdf",
-        rev:         "1.1",
-        revdate:     "Aug 2009",
-        tags:        ["UVM", "SV"],
-        award:       "NA",
-        awardtype:   "NA",
-        cliffnote:   "NA",
-        training:    "NA",
-        note:        "NA",
-        author:      "Stu",
-        xtraUrl:     "NA",
-        xtra:        "NA",
-    },
-    
+]
+
+const papers = [        
     {
         conf:        "DAC",
         year:        "2008",
         confLoc:     "NA",
         title:       "SystemVerilog Implicit Port Enhancements<br>Accelerate System Design & Verification",
         shorttitle:  "SystemVerilog Implicit Port Enhancements<br>Accelerate System Design & Verification",
-        url:         "CummingsDAC2008_DotStarPorts.pdf",
+        // url:         "CummingsDAC2008_DotStarPorts.pdf",
+        url:         "www.sunburst-design.com/papers/CummingsDAC2008_DotStarPorts.pdf",
         rev:         "1.1",
         revdate:     "Nov 2008",
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -231,7 +105,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -251,7 +124,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -271,7 +143,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -291,7 +162,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -311,7 +181,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -331,7 +200,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -351,7 +219,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -371,7 +238,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -391,7 +257,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -411,7 +276,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -431,7 +295,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -451,7 +314,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -471,7 +333,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "3rd",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -491,7 +352,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -511,7 +371,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "2nd",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -531,7 +390,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "2nd",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -551,7 +409,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -571,7 +428,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "Sunburst Design 6-hour SystemVerilog Assertion Training class available",
         note:        "NA",
         author:      "NA",
@@ -591,7 +447,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "2nd",
         awardtype:   "Tech",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -611,7 +466,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -631,7 +485,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "3rd",
         awardtype:   "Tech",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -651,7 +504,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -671,7 +523,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -691,7 +542,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -711,7 +561,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "2nd",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -731,7 +580,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -751,7 +599,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -771,7 +618,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -791,7 +637,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -811,7 +656,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -831,7 +675,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "3rd",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -851,7 +694,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -871,7 +713,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "2nd",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -891,7 +732,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "2nd",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -911,7 +751,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -931,7 +770,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -951,7 +789,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -971,7 +808,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "3rd",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -991,7 +827,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "2nd",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1011,7 +846,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1031,7 +865,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "Paper",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1051,7 +884,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1071,7 +903,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "fsm_perl script<br>temporarily<br>unavailable",
         author:      "NA",
@@ -1091,7 +922,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1111,7 +941,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "2nd",
         awardtype:   "ICsig",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1131,7 +960,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "1st",
         awardtype:   "CAEsig",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1151,14 +979,112 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
         xtraUrl:     "NA",
         xtra:        "NA",
     },
+];
+
+const dacs = [    
+    {
+        conf:        "DAC",
+        year:        "2013",
+        confLoc:     "NA",
+        title:       "The New SystemVerilog-2012 Standard",
+        shorttitle:  "The New SystemVerilog-2012 Standard",
+        url:         "SV2012_SunburstDesign_DAC2013_bw.pdf",
+        rev:         "1.0",
+        revdate:     "Jun 2013",
+        tags:        ["UVM", "SV"],
+        award:       "NA",
+        awardtype:   "NA",
+        training:    "NA",
+        note:        "NA",
+        author:      "Cliff",
+        xtraUrl:     "NA",
+        xtra:        "DAC Slides",
+    },
     
+    {
+        conf:        "DAC",
+        year:        "2009",
+        confLoc:     "NA",
+        title:       "SystemVerilog-2009 Update - Part 1 - DAC Slides (color)",
+        shorttitle:  "SV-2009 Update - Part 1",
+        url:         "DAC2009_SystemVerilog_Update_Part1_SunburstDesign.pdf",
+        rev:         "1.1",
+        revdate:     "Aug 2009",
+        tags:        ["UVM", "SV"],
+        award:       "NA",
+        awardtype:   "NA",
+        training:    "NA",
+        note:        "NA",
+        author:      "Cliff",
+        xtraUrl:     "NA",
+        xtra:        "NA",
+    },
+    
+    {
+        conf:        "DAC",
+        year:        "2009",
+        confLoc:     "NA",
+        title:       "SystemVerilog-2009 Update - Part 1 - DAC Slides (bw)",
+        shorttitle:  "SV-2009 Update - Part 1 (bw)",
+        url:         "DAC2009_SystemVerilog_Update_Part1_SunburstDesign_BW.pdf",
+        rev:         "1.1",
+        revdate:     "Aug 2009",
+        tags:        ["UVM", "SV"],
+        award:       "NA",
+        awardtype:   "NA",
+        training:    "NA",
+        note:        "NA",
+        author:      "Cliff",
+        xtraUrl:     "NA",
+        xtra:        "NA",
+    },
+    
+    {
+        conf:        "DAC",
+        year:        "2009",
+        confLoc:     "NA",
+        title:       "SystemVerilog-2009 Update - Part 2 - DAC Slides (color)",
+        shorttitle:  "SV-2009 Update - Part 2",
+        url:         "DAC2009_SystemVerilog_Update_Part2_SutherlandHDL.pdf",
+        rev:         "1.1",
+        revdate:     "Aug 2009",
+        tags:        ["UVM", "SV"],
+        award:       "NA",
+        awardtype:   "NA",
+        training:    "NA",
+        note:        "NA",
+        author:      "Stu",
+        xtraUrl:     "NA",
+        xtra:        "NA",
+    },
+    
+    {
+        conf:        "DAC",
+        year:        "2009",
+        confLoc:     "NA",
+        title:       "SystemVerilog-2009 Update - Part 2 - DAC Slides",
+        shorttitle:  "SV-2009 Update - Part 2",
+        url:         "DAC2009_SystemVerilog_Update_Part2_SutherlandHDL.pdf",
+        rev:         "1.1",
+        revdate:     "Aug 2009",
+        tags:        ["UVM", "SV"],
+        award:       "NA",
+        awardtype:   "NA",
+        training:    "NA",
+        note:        "NA",
+        author:      "Stu",
+        xtraUrl:     "NA",
+        xtra:        "NA",
+    },
+];
+
+const recommendedpapers = [    
     {
         conf:        "SNUG",
         year:        "2013",
@@ -1171,7 +1097,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "Brian Hunter, Ben Chen, Rebecca Lipon",
@@ -1191,7 +1116,6 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "Brian Hunter, Ben Chen, Rebecca Lipon",
@@ -1211,14 +1135,15 @@ const papers = [
         tags:        ["UVM", "SV"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "Brian Hunter, Ben Chen, Rebecca Lipon",
         xtraUrl:     "NA",
         xtra:        "NA",
     },
-    
+];
+
+const otherpapers = [    
     {
         conf:        "ICU",
         year:        "1996",
@@ -1231,7 +1156,6 @@ const papers = [
         tags:        ["Verilog", "BEH"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1251,7 +1175,6 @@ const papers = [
         tags:        ["Verilog", "BEH"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1271,7 +1194,6 @@ const papers = [
         tags:        ["Verilog", "BEH"],
         award:       "1st",
         awardtype:   "CAEsig",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1291,7 +1213,6 @@ const papers = [
         tags:        ["Verilog", "BEH"],
         award:       "1st",
         awardtype:   "CAEsig",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1311,7 +1232,6 @@ const papers = [
         tags:        ["Verilog", "BEH"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1331,7 +1251,6 @@ const papers = [
         tags:        ["Verilog", "BEH"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1351,7 +1270,6 @@ const papers = [
         tags:        ["Verilog", "BEH"],
         award:       "1st",
         awardtype:   "CAEsig",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1371,7 +1289,6 @@ const papers = [
         tags:        ["Verilog", "BEH"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1391,7 +1308,6 @@ const papers = [
         tags:        ["Verilog", "BEH"],
         award:       "NA",
         awardtype:   "NA",
-        cliffnote:   "NA",
         training:    "NA",
         note:        "NA",
         author:      "NA",
@@ -1400,41 +1316,166 @@ const papers = [
     },  
 ];
 
-// //----------------------------------------------------------------------------
-// // Code to help detect sindow size and which html and css files are begin used
-// // https://www.tutorialrepublic.com/codelab.php?topic=faq&file=javascript-window-resize-event
-// //----------------------------------------------------------------------------
-// function displayWindowInfo(){
-//     // Get width and height of the window excluding scrollbars
-//     let w = Number(document.documentElement.clientWidth);
+createCnotesTable();
+createPapersTable();
+createDacTable();
+createRecommendsTable();
+createOthersTable();
 
-//     if (w > 400) {
-//         document.getElementById("css-src").innerHTML = `<h2 id="css-src">Uses sunburst-large.css</h2>`;
-//         // console.log("Large size!");
-//     } else {
-//         document.getElementById("css-src").innerHTML = `<h2 id="css-src">Uses sunburst.css</h2>`;
-//         // console.log("Small size!");
-//     };
+function createCnotesTable () {
+    console.log("Starting createCnotesTable function-1");
+    // Get the table once
+    let table = document.getElementById("cliffnotes")
+
+    // Now append rows and table-data to the table
+    cnotes.forEach(cnote => {
+        // console.log(`${paper.conf} ${paper.year}`);
+
+        let row = document.createElement("tr");
+        let conference = document.createElement("td");
+        let title = document.createElement("td");
+        let revision = document.createElement("td");
+
+        if (cnote.cliffnote == "NA") {
+            conference.innerHTML = `<td></td>`;
+        } else {
+            conference.innerHTML = `<td>Cliff-Note ${cnote.cliffnote}</td>`;
+        }
+
+        title.innerHTML = `<td>${cnote.title}</td>`;
+        revision.innerHTML = `<td>Rev ${cnote.rev}<br>${cnote.revdate}</td>`
+
+        row.appendChild(conference);
+        row.appendChild(title);
+        row.appendChild(revision);
+        table.appendChild(row);
+    })
+}
+
+function createPapersTable () {
+    console.log("Starting createPapersTable function-2");
+    // Get the table once
+    let table = document.getElementById("cliffpapers")
+
+    // Now append rows and table-data to the table
+    papers.forEach(paper => {
+        // console.log(`${paper.conf} ${paper.year}`);
+
+        let row = document.createElement("tr");
+        let conference = document.createElement("td");
+        let title = document.createElement("td");
+        let revision = document.createElement("td");
+        let award = document.createElement("td");
+
+        if (paper.conf == "NA") {
+            if (paper.cliffnote == "NA") {
+                conference.innerHTML = `<td></td>`;
+            } else {
+                conference.innerHTML = `<td>Cliff-Note ${paper.cliffnote}</td>`;
+            }
+        } else {
+            conference.innerHTML = `<td>${paper.conf}<br>${paper.year}</td>`;
+        }
+        // title.innerHTML = `<td><a href="${rootUrl}/${paper.url}">${paper.title}</a></td>`;
+        title.innerHTML = `<td><a href="${paper.url}">${paper.title}</a></td>`;
+        // title.innerHTML = `<td>${paper.title}</td>`;
+        revision.innerHTML = `<td>Rev ${paper.rev}<br>${paper.revdate}</td>`
+        switch (paper.awardtype) {
+            case "Paper":
+                award.innerHTML = `<td>Voted Best Paper<br>${paper.award} Place</td>`;
+                break;
+            case "Tech":
+                award.innerHTML = `<td>Tech Paper Award<br>${paper.award} Place</td>`;
+                break;
+            case "CAEsig":
+                award.innerHTML = `<td>Voted Best Paper<br>${paper.award} Place - CAE SIG</td>`;
+                break;
+            case "ICsig":
+                award.innerHTML = `<td>Voted Best Paper<br>${paper.award} Place - IC SIG</td>`;
+                break;
+            default:
+                award.innerHTML = `<td></td>`;
+                break;
+        }
         
-//     // Display result inside a div element
-//     document.getElementById("result").innerHTML = "Width: " + w;
-// }
- 
-// // Attaching the event listener function to window's resize event
-// window.addEventListener("resize", displayWindowInfo);
+        row.appendChild(conference);
+        row.appendChild(title);
+        row.appendChild(revision);
+        row.appendChild(award);
+        table.appendChild(row);
+    })
+}
 
-// // Calling the function for the first time
-// displayWindowInfo();
-// //----------------------------------------------------------------------------
+function createDacTable () {
+    console.log("Starting createDacTable function-2B");
+    // Get the table once
+    let table = document.getElementById("dacpresentations")
 
+    // Now append rows and table-data to the table
+    dacs.forEach(dac => {
+        let row = document.createElement("tr");
+        let conference = document.createElement("td");
+        let title = document.createElement("td");
 
-papers.forEach(paper => {
-//   let productHTML = document.createElement("option");
-//   productHTML.setAttribute("value", `${product.name}`);
-//   productHTML.innerHTML = product.name;
-//   document.getElementById("prodName").appendChild(productHTML);
-});
+        conference.innerHTML = `<td>${dac.conf}<br>${dac.year}</td>`;
+        title.innerHTML = `<td>${dac.title}</td>`;
+        
+        row.appendChild(conference);
+        row.appendChild(title);
+        table.appendChild(row);
+    })
+}
 
+function createRecommendsTable () {
+    console.log("Starting createRecommendsTable function-3");
+    // Get the table once
+    let table = document.getElementById("recommends")
+
+    // Now append rows and table-data to the table
+    recommendedpapers.forEach(recommend => {
+        let row = document.createElement("tr");
+        let conference = document.createElement("td");
+        let title = document.createElement("td");
+
+        conference.innerHTML = `<td>${recommend.conf}<br>${recommend.year}</td>`;
+        title.innerHTML = `<td>${recommend.title}</td>`;
+
+        row.appendChild(conference);
+        row.appendChild(title);
+        table.appendChild(row);
+    })
+}
+
+function createOthersTable () {
+    console.log("Starting createOthersTable function-4");
+    // Get the table once
+    let table = document.getElementById("nonpublished")
+
+    // Now append rows and table-data to the table
+    otherpapers.forEach(xtra => {
+        let row = document.createElement("tr");
+        let conference = document.createElement("td");
+        let title = document.createElement("td");
+        let award = document.createElement("td");
+
+        conference.innerHTML = `<td>${xtra.conf}<br>${xtra.year}</td>`;
+        title.innerHTML = `<td>${xtra.title}</td>`;
+        // revision.innerHTML = `<td>Rev ${xtra.rev}<br>${xtra.revdate}</td>`
+        switch (xtra.awardtype) {
+            case "CAEsig":
+                award.innerHTML = `<td>Voted Best Paper<br>${xtra.award} Place - CAE SIG</td>`;
+                break;
+            default:
+                award.innerHTML = `<td></td>`;
+                break;
+        }
+
+        row.appendChild(conference);
+        row.appendChild(title);
+        row.appendChild(award);
+        table.appendChild(row);
+    })
+}
 //-------------------------------------------------------------------------------
 // Number of Reviews - local storage (numberReviews-ls)
 //-------------------------------------------------------------------------------
@@ -1444,58 +1485,6 @@ numberReviews.textContent = `Number of reviews submitted: ${numberReviews}`;
 numberReviews++;
 localStorage.setItem("numberReviews-ls", numberReviews);
 
-const temperature = 50;  // Test wind chill by setting this value to 51
-const wind = 20;
-const conditions = "Partly Cloudy";
-// let chill = "N/A";
-// document.getElementById("chill").innerHTML = "N/A";
-// console.log("Chill0 = " + chill);               // TODO DEBUG
-
-//-------------------------------------------------------------------------------------
-// https://www.backpacker.com/skills/how-to-calculate-wind-chill
-//
-// The National Weather Service’s formula to calculate wind chill is:
-// 35.74 + 0.6215T – 35.75(V0.16) + 0.4275T(V0.16).
-//
-// T represents air temperature in Fahrenheit 
-// V represents wind speed in miles per hour.
-// (Humidity does not affect the overall wind chill enough to be considered a factor.)
-// The equation only works for temperatures at or below 50°F and gusts above 3 mph.
-//-------------------------------------------------------------------------------------
-
-function calculateWindChill(T, V) {
-    return 35.74 + (0.6215*T) - (35.75*(Math.pow(V, 0.16))) + (0.4275*T)*(Math.pow(V, 0.16));
+function listPaper() {
+    // document.querySelector(#cliffpapers).innerHtml="";
 }
-
-// For Fun & Experience - Added "Calculate Wind Chill" button
-// if (temperature <= 50 && wind > 3) {
-//     chill = calculateWindChill(temperature, wind);
-// }
-
-// document.getElementById("temp").innerHTML = temperature + "&deg;C";
-// document.getElementById("condition").innerHTML = conditions;
-// document.getElementById("wind").innerHTML = wind + " km/h";
-// // Set initial chill string to be "N/A"
-// document.getElementById("chill").innerHTML = "N/A";
-
-// const chill = calculateWindChill(temperature,wind);
-// document.getElementById("chill").innerText = chill.toFixed(2);
-
-// document.getElementById("chill-button").addEventListener("click", () => {
-//     // Calculate and update the "chill" value
-//     let chill = "N/A";
-//     document.getElementById("chill").innerHTML = chill;
-
-//     // console.log("Chill1 = " + chill);           // TODO DEBUG
-//     if (temperature <= 50 && wind > 3) {
-//         chill = calculateWindChill(temperature, wind);
-//         // console.log("Chill2 = " + chill);       // TODO DEBUG
-//         const stringChill = String(chill.toFixed(2));
-//         // console.log("Chill = " + stringChill);  // TODO DEBUG
-//         document.getElementById("chill").innerHTML = String(chill.toFixed(2)) + "&deg;C";
-//     } else {
-//         // console.log("Chill3 = " + chill);       // TODO DEBUG
-//         chill = "N/A"
-//         document.getElementById("chill").innerHTML = chill;
-//     }
-// })
