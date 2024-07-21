@@ -56,11 +56,11 @@ header .center {
 }
 
 main {
-    position: relative;
+    /* position: relative; */
     padding: 1rem;
     /* background-color: white; */
     background-color: var(--accent_color2);
-    /* min-width: 400px; */
+    min-width: 400px;
     width: 100%;
 }
 
@@ -97,7 +97,7 @@ table {
 /*-------------------------------------------------*/
 
 .notes-container, .papers-container, .rec-container, .others-container, .dac-container {
-    display:inlinegrid;
+    display: grid;
     grid-gap: 10px;
     place-items: center;
     border-style: solid;
@@ -105,23 +105,32 @@ table {
 }
 
 .papers-container {
-    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-columns: repeat (4, auto);
     border-color: blue;
 }
 .notes-container {
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: repeat (3, auto);
     border-color: var(--wild_red);
 }
 .dac-container {
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: repeat (2, auto);
     border-color: yellow;
 }
 .rec-container {
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: repeat (2, auto);
     border-color: green;
 }
 .others-container {
+    grid-template-columns: repeat (3, auto);
     border-color: orange;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .navigation {
