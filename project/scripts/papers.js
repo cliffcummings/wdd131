@@ -1340,7 +1340,7 @@ function createCnotesTable () {
         }
 
         title.innerHTML = `<td><a href="${rootUrl}${cnote.url}">${cnote.title}</a></td>`;
-        revision.innerHTML = `<td>Rev ${cnote.rev}<br>${cnote.revdate}</td>`
+        revision.innerHTML = `<div class="itemrev">Rev ${cnote.rev}<br>${cnote.revdate}</td></div>`
 
         row.appendChild(conference);
         row.appendChild(title);
@@ -1371,24 +1371,24 @@ function createPapersTable () {
                 conference.innerHTML = `<td>Cliff-Note ${paper.cliffnote}</td>`;
             }
         } else {
-            conference.innerHTML = `<td>${paper.conf}<br>${paper.year}</td>`;
+            conference.innerHTML = `<div class="item1"><td>${paper.conf}<br>${paper.year}</td><div>`;
         }
         title.innerHTML = `<td><a href="${rootUrl}${paper.url}">${paper.title}</a></td>`;
         // title.innerHTML = `<td><a href="https://${paper.url}">${paper.title}</a></td>`;
         // title.innerHTML = `<td>${paper.title}</td>`;
-        revision.innerHTML = `<td>Rev ${paper.rev}<br>${paper.revdate}</td>`
+        revision.innerHTML = `<div class="itemrev"><td>Rev ${paper.rev}<br>${paper.revdate}</td></div>`
         switch (paper.awardtype) {
             case "Paper":
-                award.innerHTML = `<td>Voted Best Paper<br>${paper.award} Place</td>`;
+                award.innerHTML = `<div class="itempaper"><td>Voted Best Paper<br>${paper.award} Place</td></div>`;
                 break;
             case "Tech":
-                award.innerHTML = `<td>Tech Paper Award<br>${paper.award} Place</td>`;
+                award.innerHTML = `<div class="itemtech"><td>Tech Paper Award<br>${paper.award} Place</td></div>`;
                 break;
             case "CAEsig":
-                award.innerHTML = `<td>Voted Best Paper<br>${paper.award} Place - CAE SIG</td>`;
+                award.innerHTML = `<div class="itemsig"><td>Voted Best Paper<br>${paper.award} Place - CAE SIG</td></div>`;
                 break;
             case "ICsig":
-                award.innerHTML = `<td>Voted Best Paper<br>${paper.award} Place - IC SIG</td>`;
+                award.innerHTML = `<div class="itemsig"><td>Voted Best Paper<br>${paper.award} Place - IC SIG</td></div>`;
                 break;
             default:
                 award.innerHTML = `<td></td>`;
@@ -1414,7 +1414,7 @@ function createDacTable () {
         let conference = document.createElement("td");
         let title = document.createElement("td");
 
-        conference.innerHTML = `<td>${dac.conf}<br>${dac.year}</td>`;
+        conference.innerHTML = `<div class="item1"><td>${dac.conf}<br>${dac.year}</td></div>`;
         title.innerHTML = `<td><a href="${rootUrl}${dac.url}">${dac.title}</a></td>`;
         
         row.appendChild(conference);
@@ -1434,7 +1434,7 @@ function createRecommendsTable () {
         let conference = document.createElement("td");
         let title = document.createElement("td");
 
-        conference.innerHTML = `<td>${recommend.conf}<br>${recommend.year}</td>`;
+        conference.innerHTML = `<div class="item1"><td>${recommend.conf}<br>${recommend.year}</td></div>`;
         title.innerHTML = `<td><a href="${rootUrl}${recommend.url}">${recommend.title}</a></td>`;
 
         row.appendChild(conference);
@@ -1455,7 +1455,7 @@ function createOthersTable () {
         let title = document.createElement("td");
         let award = document.createElement("td");
 
-        conference.innerHTML = `<td>${xtra.conf}<br>${xtra.year}</td>`;
+        conference.innerHTML = `<div class="item1"><td>${xtra.conf}<br>${xtra.year}</td></div>`;
         title.innerHTML = `<td>${xtra.title}</td>`;
         // revision.innerHTML = `<td>Rev ${xtra.rev}<br>${xtra.revdate}</td>`
         switch (xtra.awardtype) {

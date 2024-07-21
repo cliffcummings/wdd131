@@ -86,6 +86,7 @@ nav ul li {
 
 table, th, td, tr {
     border: 2px solid;
+    padding: 2px;
 }
 
 table {
@@ -96,12 +97,15 @@ table {
 /* Class Selectors                                 */
 /*-------------------------------------------------*/
 
+/* .padding-left {
+    padding-left: 5px;
+} */
+
 .notes-container, .papers-container, .rec-container, .others-container, .dac-container {
     display: grid;
-    grid-gap: 10px;
-    place-items: center;
     border-style: solid;
     border-width: 5px;
+    /* text-align: center; */
 }
 
 .papers-container {
@@ -125,7 +129,37 @@ table {
     border-color: orange;
 }
 
-.grid-item {
+.item1 {
+    background-color: red;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+.itempaper {
+    background-color: gold;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.itemtech {
+    background-color: orange;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.itemsig {
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.itemrev {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.item2 {
+    grid-column-start: 1;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
