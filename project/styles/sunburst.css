@@ -105,23 +105,23 @@ table {
 }
 
 .papers-container {
-    grid-template-columns: repeat (4, auto);
+    grid-template-columns: auto auto auto auto;
     border-color: blue;
 }
 .notes-container {
-    grid-template-columns: repeat (3, auto);
+    grid-template-columns: auto auto auto;
     border-color: var(--wild_red);
 }
 .dac-container {
-    grid-template-columns: repeat (2, auto);
+    grid-template-columns: auto auto;
     border-color: yellow;
 }
 .rec-container {
-    grid-template-columns: repeat (2, auto);
+    grid-template-columns: auto auto;
     border-color: green;
 }
 .others-container {
-    grid-template-columns: repeat (3, auto);
+    grid-template-columns: auto auto auto;
     border-color: orange;
 }
 
