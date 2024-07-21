@@ -1,4 +1,4 @@
-const rootUrl = "www.sunburst-design.com/papers/";
+const rootUrl = "https://www.sunburst-design.com/papers/";
 
 const cnotes = [
     {
@@ -79,8 +79,7 @@ const papers = [
         confLoc:     "NA",
         title:       "SystemVerilog Implicit Port Enhancements<br>Accelerate System Design & Verification",
         shorttitle:  "SystemVerilog Implicit Port Enhancements<br>Accelerate System Design & Verification",
-        // url:         "CummingsDAC2008_DotStarPorts.pdf",
-        url:         "www.sunburst-design.com/papers/CummingsDAC2008_DotStarPorts.pdf",
+        url:         "CummingsDAC2008_DotStarPorts.pdf",
         rev:         "1.1",
         revdate:     "Nov 2008",
         tags:        ["UVM", "SV"],
@@ -1323,14 +1322,12 @@ createRecommendsTable();
 createOthersTable();
 
 function createCnotesTable () {
-    console.log("Starting createCnotesTable function-1");
+    // console.log("Starting createCnotesTable function-1");
     // Get the table once
     let table = document.getElementById("cliffnotes")
 
     // Now append rows and table-data to the table
     cnotes.forEach(cnote => {
-        // console.log(`${paper.conf} ${paper.year}`);
-
         let row = document.createElement("tr");
         let conference = document.createElement("td");
         let title = document.createElement("td");
@@ -1342,7 +1339,7 @@ function createCnotesTable () {
             conference.innerHTML = `<td>Cliff-Note ${cnote.cliffnote}</td>`;
         }
 
-        title.innerHTML = `<td>${cnote.title}</td>`;
+        title.innerHTML = `<td><a href="${rootUrl}${cnote.url}">${cnote.title}</a></td>`;
         revision.innerHTML = `<td>Rev ${cnote.rev}<br>${cnote.revdate}</td>`
 
         row.appendChild(conference);
@@ -1353,7 +1350,7 @@ function createCnotesTable () {
 }
 
 function createPapersTable () {
-    console.log("Starting createPapersTable function-2");
+    // console.log("Starting createPapersTable function-2");
     // Get the table once
     let table = document.getElementById("cliffpapers")
 
@@ -1376,8 +1373,8 @@ function createPapersTable () {
         } else {
             conference.innerHTML = `<td>${paper.conf}<br>${paper.year}</td>`;
         }
-        // title.innerHTML = `<td><a href="${rootUrl}/${paper.url}">${paper.title}</a></td>`;
-        title.innerHTML = `<td><a href="${paper.url}">${paper.title}</a></td>`;
+        title.innerHTML = `<td><a href="${rootUrl}${paper.url}">${paper.title}</a></td>`;
+        // title.innerHTML = `<td><a href="https://${paper.url}">${paper.title}</a></td>`;
         // title.innerHTML = `<td>${paper.title}</td>`;
         revision.innerHTML = `<td>Rev ${paper.rev}<br>${paper.revdate}</td>`
         switch (paper.awardtype) {
@@ -1407,7 +1404,7 @@ function createPapersTable () {
 }
 
 function createDacTable () {
-    console.log("Starting createDacTable function-2B");
+    // console.log("Starting createDacTable function-2B");
     // Get the table once
     let table = document.getElementById("dacpresentations")
 
@@ -1418,7 +1415,7 @@ function createDacTable () {
         let title = document.createElement("td");
 
         conference.innerHTML = `<td>${dac.conf}<br>${dac.year}</td>`;
-        title.innerHTML = `<td>${dac.title}</td>`;
+        title.innerHTML = `<td><a href="${rootUrl}${dac.url}">${dac.title}</a></td>`;
         
         row.appendChild(conference);
         row.appendChild(title);
@@ -1427,7 +1424,7 @@ function createDacTable () {
 }
 
 function createRecommendsTable () {
-    console.log("Starting createRecommendsTable function-3");
+    // console.log("Starting createRecommendsTable function-3");
     // Get the table once
     let table = document.getElementById("recommends")
 
@@ -1438,7 +1435,7 @@ function createRecommendsTable () {
         let title = document.createElement("td");
 
         conference.innerHTML = `<td>${recommend.conf}<br>${recommend.year}</td>`;
-        title.innerHTML = `<td>${recommend.title}</td>`;
+        title.innerHTML = `<td><a href="${rootUrl}${recommend.url}">${recommend.title}</a></td>`;
 
         row.appendChild(conference);
         row.appendChild(title);
@@ -1447,7 +1444,7 @@ function createRecommendsTable () {
 }
 
 function createOthersTable () {
-    console.log("Starting createOthersTable function-4");
+    // console.log("Starting createOthersTable function-4");
     // Get the table once
     let table = document.getElementById("nonpublished")
 
