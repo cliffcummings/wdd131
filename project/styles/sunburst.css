@@ -107,6 +107,44 @@ ul {
 }
 
 /*-------------------------------------------------*/
+/* Item Selectors                                  */
+/*-------------------------------------------------*/
+/* Mobile View ***************/
+
+#filtermenu {
+    display: flex;
+	font-size: 1rem;
+    border: solid red;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem .75rem 0rem .75rem;
+	background-color: green;
+	color: yellow;
+}
+
+/* display: flex defined in filtermenu tag */
+#filtermenu {
+    flex-direction: row;
+}
+
+/* display: flex defined in filtermenu tag */
+#filtermenu.show {
+    flex-direction: column;
+}
+
+/* content: "☰"; */
+/* content: "≡"; */
+#filtermenu::before {
+	content: "☰";
+}
+
+#filtermenu.show::before {
+	content: "❎";
+}
+#filtermenu.show .hide {
+    display: none;
+}
+/*-------------------------------------------------*/
 /* Class Selectors                                 */
 /*-------------------------------------------------*/
 
@@ -138,6 +176,11 @@ ul {
     text-align: center;
     margin: 1rem auto 1rem auto;
     font-weight: bold;
+}
+
+.button li {
+    border: solid yellow;
+    vertical-align: middle;
 }
 
 .notes-container, .papers-container, .rec-container, .others-container, .dac-container {

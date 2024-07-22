@@ -5,6 +5,31 @@
         background-color: aqua;
     }
 
+    /* display: flex defined in header tag */
+    #layout {
+        flex-direction: row;
+    }
+    
+    /* display: flex defined in header tag */
+    #layout.show {
+        flex-direction: column;
+    }
+    
+    #filtermenu {
+        display: flex;
+        font-size: 1.5rem;
+        border: solid red;
+        text-decoration: none;
+        text-align: center;
+        padding: 0.5rem .75rem 0rem .75rem;
+        background-color: black;
+        color: orange;
+    }
+
+    /* .hide {
+        flex-direction: column;
+    } */
+
     .navigation a:hover {
         background-color: yellow;
         color: #333;

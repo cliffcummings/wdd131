@@ -1338,7 +1338,7 @@ function createCnotesTable(filtered) {
         if (cnote.cliffnote == "NA") {
             conference.innerHTML = `<td></td>`;
         } else {
-            conference.innerHTML = `<td>Cliff-Note ${cnote.cliffnote}</td>`;
+            conference.innerHTML = `<div class="item1"><td>Cliff-Note ${cnote.cliffnote}</td></div>`;
         }
 
         title.innerHTML = `<td><a href="${rootUrl}${cnote.url}">${cnote.title}</a></td>`;
@@ -1555,6 +1555,7 @@ cdclink.addEventListener('click', () => {
 fsmlink.addEventListener('click', () => {
     createAllTables("FSM");
 })
+
 
 // let numberReviews = Number(window.localStorage.getItem("numberReviews-ls"));
 // numberReviews.textContent = `Number of reviews submitted: ${numberReviews}`;
