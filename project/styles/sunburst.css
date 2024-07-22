@@ -29,6 +29,13 @@ h2 {
     margin-bottom: .2rem;
 }
 
+h3 {
+    margin: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: blue;
+}
+
 body {
     /* min-width: 390px; */
     /* width: 100%; */
@@ -47,6 +54,7 @@ header {
 }
 
 img {
+    margin-right: 0.5rem;
     justify-content: center;
 }
 
@@ -101,6 +109,29 @@ table {
     padding-left: 5px;
 } */
 
+.boldbox {
+    border: 3px solid var(--back_color1);
+    width: 50%;
+    padding: 3px;
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+    font-weight: bold;
+}
+
+.box {
+    border: 3px solid var(--back_color1);
+    width: 65%;
+    padding: 3px;
+    text-align: left;
+    margin: 1rem auto 1rem auto;
+}
+
+.nobox {
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+    font-weight: bold;
+}
+
 .notes-container, .papers-container, .rec-container, .others-container, .dac-container {
     display: grid;
     border-style: solid;
@@ -130,31 +161,31 @@ table {
 }
 
 .item1 {
-    background-color: red;
-    border: 1px solid blue;
+    /* background-color: red; */
+    /* border: 1px solid blue; */
     text-align: center;
 }
 
 .itempaper {
     background-color: gold;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
 }
 
 .itemtech {
     background-color: orange;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
 }
 
 .itemsig {
     background-color: lightblue;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
 }
 
 .itemrev {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
 }
 

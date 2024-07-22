@@ -1460,7 +1460,7 @@ function createOthersTable () {
         // revision.innerHTML = `<td>Rev ${xtra.rev}<br>${xtra.revdate}</td>`
         switch (xtra.awardtype) {
             case "CAEsig":
-                award.innerHTML = `<td>Voted Best Paper<br>${xtra.award} Place - CAE SIG</td>`;
+                award.innerHTML = `<div class=itemsig><td>Voted Best Paper<br>${xtra.award} Place - CAE SIG</td></div>`;
                 break;
             default:
                 award.innerHTML = `<td></td>`;
