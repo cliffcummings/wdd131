@@ -101,17 +101,25 @@ table {
     width: 100%;
 }
 
+ul {
+    margin-left: 2rem;
+}
+
 /*-------------------------------------------------*/
 /* Class Selectors                                 */
 /*-------------------------------------------------*/
 
-/* .padding-left {
-    padding-left: 5px;
-} */
+.awards {
+    margin-top: 0;
+}
+
+.block {
+    display: block;
+}
 
 .boldbox {
     border: 3px solid var(--back_color1);
-    width: 50%;
+    /* width: 50%; */
     padding: 3px;
     text-align: center;
     margin: 1rem auto 1rem auto;
@@ -120,7 +128,6 @@ table {
 
 .box {
     border: 3px solid var(--back_color1);
-    width: 65%;
     padding: 3px;
     text-align: left;
     margin: 1rem auto 1rem auto;

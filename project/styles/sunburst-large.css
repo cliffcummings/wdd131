@@ -1,5 +1,5 @@
 /* Larger Views ******************************/
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 700px) {
 
 	nav ul li {
         background-color: aqua;
@@ -20,5 +20,30 @@
         grid-template-columns: 1fr 5fr 1fr 1fr;
         grid-gap: 10px;
         place-items: center;
+    }
+    
+    .awards {
+        margin-top: 4rem;
+    }
+    
+    .block {
+        display: inline;
+    }
+    
+    .boldbox {
+        border: 3px solid var(--back_color1);
+        width: 70%;
+        padding: 3px;
+        text-align: center;
+        margin: 1rem auto 1rem auto;
+        font-weight: bold;
+    }
+    
+    .box {
+        border: 3px solid var(--back_color1);
+        width: 75%;
+        padding: 3px;
+        text-align: left;
+        margin: 1rem auto 1rem auto;
     }
 }
