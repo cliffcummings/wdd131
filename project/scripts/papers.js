@@ -1556,6 +1556,13 @@ fsmlink.addEventListener('click', () => {
     createAllTables("FSM");
 })
 
+const filterMenu = document.querySelector("#filtermenu");
+const offScreenMenu = document.querySelector(".off-screen-menu");
+
+filterMenu.addEventListener('click', () => {
+    filterMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+})
 
 // let numberReviews = Number(window.localStorage.getItem("numberReviews-ls"));
 // numberReviews.textContent = `Number of reviews submitted: ${numberReviews}`;

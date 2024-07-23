@@ -31,11 +31,11 @@
             <h1 class="roboto">World Class SystemVerilog &amp; UVM Training</h1>
         </div>
 
-        <div class="debug">
+        <!-- <div class="debug">
             <p>DEBUG: Expert Training verilog_training.html page</p>
             <div id="css-src">Uses sunburst.css</div>
             <div id="result"></div>
-        </div>
+        </div> -->
 
         <!-- Add formated navigation menu - beginning menu shown -->
 
@@ -58,19 +58,47 @@
             </h2>
 
             <p>
-                Content
+                Sunburst Design offers World-Class SystemVerilog, UVM, synthesis, Clock Domain Crossing (CDC)
+                and FIFO design training.
             </p>
-        </div>
-
-        <div>
-            <h2>
-                Sub-Topic
-            </h2>
 
             <p>
-                Content
+                To request training content and scheuling information, please complete the following form:
             </p>
+            <br>
         </div>
+        
+        <form method="get">
+            <div class="name">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" value="">
+            </div>
+
+            <div class="courses">
+                <label>Which courses might interest you?</label>
+                <p>(Check all that apply)?</p>
+
+                <input type="checkbox" id="course1" name="course1" value="">
+                <label for="course1">SystemVerilog Design</label><br>
+
+                <input type="checkbox" id="course2" name="course2" value="">
+                <label for="course2">SystemVerilog Fundamentals</label><br>
+
+                <input type="checkbox" id="course3" name="course3" value="">
+                <label for="course3">Universal Verification Methodology (UVM)</label><br>
+
+                <input type="checkbox" id="course4" name="course4" value="">
+                <label for="course4">SystemVerilog RTL Synthesis</label><br>
+                
+                <input type="checkbox" id="course5" name="course5" value="">
+                <label for="course5">CDC & FIFO Design</label><br>
+                                
+                <input type="checkbox" id="course6" name="course6" value="">
+                <label for="course6">Custom Training</label><br>
+
+                <input type="submit" name="submit" id="submit" value="Submit Training Information Request">
+            </div>
+        </form>
             
     </main>
 

@@ -39,14 +39,14 @@ h3 {
 body {
     /* min-width: 390px; */
     /* width: 100%; */
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
     font-family: Roboto, sans-serif;
 }
 
 /* padding: 0px keeps nav-bar at bottom of header */
 header {
     display: block;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     color: var(--sunburst_red);
     border: none;
     margin: 0;
@@ -67,15 +67,20 @@ main {
     /* position: relative; */
     padding: 1rem;
     /* background-color: white; */
-    background-color: var(--accent_color2);
+    background-color: var(--accent_color3);
     min-width: 400px;
     width: 100%;
+}
+
+span {
+    display: flex;
+    background-color: orange;
 }
 
 footer {
     padding: 1rem;
     margin-bottom: 3rem;
-    color: orange;
+    color: white;
     background-color: var(--back_color1);
     text-align: center;
 }
@@ -85,10 +90,14 @@ nav {
     justify-content:center;
 }
 
+span {
+    background-color: orange;
+}
+
 nav ul li {
     display: block;
     flex: 1 1 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
     margin: 0 1rem 1rem 1rem;
 }
 
@@ -114,21 +123,22 @@ ul {
 #filtermenu {
     display: flex;
 	font-size: 1rem;
-    border: solid red;
+    /* border: solid red;
     text-decoration: none;
-    text-align: center;
-    padding: 0.5rem .75rem 0rem .75rem;
-	background-color: green;
-	color: yellow;
+    text-align: center; */
+    /* padding: 0.5rem .75rem 0rem .75rem; */
+	/* background-color: pink; */
+	color: black;
 }
 
 /* display: flex defined in filtermenu tag */
-#filtermenu {
+/* #filtermenu {
     flex-direction: row;
-}
+    display: none;
+} */
 
 /* display: flex defined in filtermenu tag */
-#filtermenu.show {
+#filtermenu.active {
     flex-direction: column;
 }
 
@@ -138,12 +148,23 @@ ul {
 	content: "☰";
 }
 
-#filtermenu.show::before {
+#filtermenu.active::before {
 	content: "❎";
+    align-content: left;
 }
-#filtermenu.show .hide {
+#filtermenu.active .hide {
     display: none;
 }
+
+#submit {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: var(--accent_color3);
+    border-width: 1px;
+    margin: 1rem;
+    padding: .2rem;
+}
+
 /*-------------------------------------------------*/
 /* Class Selectors                                 */
 /*-------------------------------------------------*/
@@ -178,9 +199,13 @@ ul {
     font-weight: bold;
 }
 
-.button li {
-    border: solid yellow;
-    vertical-align: middle;
+.button-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.button-list li, .button-list a {
+    display: block;
 }
 
 .notes-container, .papers-container, .rec-container, .others-container, .dac-container {
@@ -257,8 +282,8 @@ ul {
 }
 
 .navpane{
-    background-color: blueviolet;
-    margin-bottom: 5rem;
+    /* background-color: blueviolet; */
+    margin-top: 1rem;
 }
 
 /* https://www.w3schools.com/howto/howto_css_image_center.asp */
@@ -297,6 +322,6 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.indent {
-    padding-left: 2rem;
+.name {
+    margin-bottom: 2rem;
 }
