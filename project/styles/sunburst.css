@@ -150,7 +150,7 @@ ul {
 
 #filtermenu.active::before {
 	content: "❎";
-    align-content: left;
+    align-content: flex-start;
 }
 #filtermenu.active .hide {
     display: none;
