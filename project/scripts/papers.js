@@ -1559,7 +1559,7 @@ fsmlink.addEventListener('click', () => {
 //-------------------------------------------------------------------------------
 // Click for papers .show class menu
 //-------------------------------------------------------------------------------
-const filternav = document.querySelector("#filtering");
+const filternav = document.querySelector(".filtering");
 const hambutton = document.querySelector("#filtermenu");
 
 filtermenu.addEventListener('click', () => {

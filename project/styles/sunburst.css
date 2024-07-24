@@ -206,14 +206,14 @@ ul {
     display: block;
 }
 
-#filtering {
+.filtering {
     /* background-color: tomato; */
     list-style: none;
     margin: 0;
     max-width: 250px;
 }
 
-#filtering .show {
+.filtering .show {
     background-color: red;
     list-style: none;
     margin: 0;
@@ -221,7 +221,7 @@ ul {
 }
 
 /* TODO - text-align */
-#filtering a {
+.filtering a {
     display: block;
     padding: 0.25rem 1rem;
     text-align: left;
@@ -232,7 +232,7 @@ ul {
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-#filtering a:hover a:active {
+.filtering a:hover a:active {
     color: white;
 }
 
