@@ -350,6 +350,10 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.name, .email {
+.name {
+    margin-bottom: 1rem;
+}
+
+.email {
     margin-bottom: 3rem;
 }
