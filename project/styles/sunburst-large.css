@@ -2,85 +2,27 @@
 @media screen and (min-width: 650px) {
 
     /* background-color: aqua; */
-	/* nav ul li {
-        background-color: var(--accent_color3);
-    } */
+	nav ul li {
+        /* background-color: var(--accent_color3); */
+        background-color: aqua;
 
-    /* display: flex defined in header tag */
-    #layout {
-        display: inline;
-        flex-direction: row;
     }
-    
-    /* display: flex defined in header tag */
-    #layout.show {
-        flex-direction: column;
+
+    .filtering {
+        display: flex;
+    }
+
+    /* Change state in large view */
+    .filtering li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .filtering a {
+        text-align: center;
     }
     
     #filtermenu {
-        display: flex;
-        gap: 2rem;
-        font-size: 1rem;
-        /* border: solid red; */
-        text-decoration: none;
-        text-align: center;
-        padding: 0.5rem .75rem 0rem .75rem;
-        /* background-color: orange; */
+        display: none;
     }
-
-    #filtermenu li,
-    #filtermenu a {
-        text-decoration: none;
-        height: auto;
-        color: #222;
-        padding: 0.2rem 0.5rem;
-        border-radius: 0.5rem;
-        background-color: #cccccc;
-    }
-    
-    #filtermenu a {
-        display: block;
-    }
-
-    /* .hide {
-        flex-direction: column;
-    } */
-
-    .navigation a:hover {
-        background-color: yellow;
-        color: #333;
-        font-weight: 700;
-    }
-    
-    .container {
-        display:grid;
-        grid-template-columns: 1fr 5fr 1fr 1fr;
-        grid-gap: 10px;
-        place-items: center;
-    }
-    
-    .awards {
-        margin-top: 4rem;
-    }
-    
-    /* .block {
-        display: inline;
-    } */
-    
-    /* .boldbox {
-        border: 3px solid var(--back_color1);
-        width: 70%;
-        padding: 3px;
-        text-align: center;
-        margin: 1rem auto 1rem auto;
-        font-weight: bold;
-    }
-    
-    .box {
-        border: 3px solid var(--back_color1);
-        width: 75%;
-        padding: 3px;
-        text-align: left;
-        margin: 1rem auto 1rem auto;
-    } */
 }

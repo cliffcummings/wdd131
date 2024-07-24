@@ -44,6 +44,7 @@ body {
 }
 
 /* padding: 0px keeps nav-bar at bottom of header */
+/* text-align nav button text to center */
 header {
     display: block;
     /* background-color: lightblue; */
@@ -58,15 +59,15 @@ img {
     justify-content: center;
 }
 
+/* Logo sizing and positioning */
 header .center {
-    width: 400px;
+    width:400px;
     height: auto;
 }
 
 main {
     /* position: relative; */
     padding: 1rem;
-    /* background-color: white; */
     background-color: var(--accent_color3);
     min-width: 400px;
     width: 100%;
@@ -97,7 +98,7 @@ span {
 nav ul li {
     display: block;
     flex: 1 1 100%;
-    /* background-color: yellow; */
+    background-color: lightgoldenrodyellow;
     margin: 0 1rem 1rem 1rem;
 }
 
@@ -120,41 +121,41 @@ ul {
 /*-------------------------------------------------*/
 /* Mobile View ***************/
 
+/* text-decoration: none removes underline from link */
 #filtermenu {
     display: flex;
-	font-size: 1rem;
-    /* border: solid red;
+	font-size: 2rem;
+    font-weight: 700;
     text-decoration: none;
-    text-align: center; */
-    /* padding: 0.5rem .75rem 0rem .75rem; */
-	/* background-color: pink; */
+    padding: 0.5rem .75rem;
+	background-color: pink;
 	color: black;
-}
-
-/* display: flex defined in filtermenu tag */
-/* #filtermenu {
-    flex-direction: row;
-    display: none;
-} */
-
-/* display: flex defined in filtermenu tag */
-#filtermenu.active {
-    flex-direction: column;
+    border: solid red;
+    /* text-align: left; */
 }
 
 /* content: "☰"; */
 /* content: "≡"; */
-#filtermenu::before {
+#filtermenu.show::before {
 	content: "☰";
 }
 
-#filtermenu.active::before {
+nav {
+    background-color: yellow;
+}
+
+/* display: flex defined in filtermenu tag */
+/* #filtermenu.show {
+    flex-direction: column;
+} */
+
+#filtermenu::before {
 	content: "❎";
-    align-content: flex-start;
 }
-#filtermenu.active .hide {
+
+/* #filtermenu.show .hide {
     display: none;
-}
+} */
 
 #submit {
     font-size: 1.2rem;
@@ -168,10 +169,6 @@ ul {
 /*-------------------------------------------------*/
 /* Class Selectors                                 */
 /*-------------------------------------------------*/
-
-.awards {
-    margin-top: 0;
-}
 
 .block {
     display: block;
@@ -200,12 +197,43 @@ ul {
 }
 
 .button-list {
+    /* display: flex; */
     display: flex;
     gap: 2rem;
 }
 
 .button-list li, .button-list a {
     display: block;
+}
+
+.filtering {
+    background-color: tomato;
+    list-style: none;
+    margin: 0;
+    max-width: 250px;
+}
+
+.filtering .show {
+    background-color: red;
+    list-style: none;
+    margin: 0;
+    max-width: 450px;
+}
+
+/* TODO - text-align */
+.filtering a {
+    display: block;
+    padding: 0.25rem 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.filtering a:hover a:active {
+    color: white;
 }
 
 .notes-container, .papers-container, .rec-container, .others-container, .dac-container {
@@ -281,7 +309,7 @@ ul {
     font-weight: bold;
 }
 
-.navpane{
+.navpane {
     /* background-color: blueviolet; */
     margin-top: 1rem;
 }
@@ -306,7 +334,7 @@ ul {
     color: yellow;
 }
 
-.contact a:hover {
+.contact a:hover a:active{
     color: lightblue;
 }
 
@@ -322,6 +350,6 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.name {
-    margin-bottom: 2rem;
+.name, .email {
+    margin-bottom: 1rem;
 }

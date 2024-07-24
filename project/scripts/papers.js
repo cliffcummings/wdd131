@@ -1556,13 +1556,24 @@ fsmlink.addEventListener('click', () => {
     createAllTables("FSM");
 })
 
-const filterMenu = document.querySelector("#filtermenu");
-const offScreenMenu = document.querySelector(".off-screen-menu");
+//-------------------------------------------------------------------------------
+// Click for papers .show class menu
+//-------------------------------------------------------------------------------
+const filternav = document.querySelector(".filtering");
+const hambutton = document.querySelector("#filtermenu");
 
-filterMenu.addEventListener('click', () => {
-    filterMenu.classList.toggle('active');
-    offScreenMenu.classList.toggle('active');
+console.log("About to click");
+
+filtermenu.addEventListener('click', () => {
+    filternav.classList.toggle('show');
+    hambutton.classList.toggle('show');
+    console.log("Toggled show");
 })
+
+
+// toggle means: add the class if it does not currently exist or remove the named class if it does exist.
+// The CSS class rules will handle the different views, layouts, and dipslays.
+// JavaScript only applies the class value or not
 
 // let numberReviews = Number(window.localStorage.getItem("numberReviews-ls"));
 // numberReviews.textContent = `Number of reviews submitted: ${numberReviews}`;
