@@ -70,38 +70,38 @@
         
         <form method="get">
             <div class="name">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" value="">
+                <label for="name" aria-label="Your Name">Your Name</label>
+                <input type="text" id="name" name="name" value="" required>
             </div>
 
             <div class="email">
-                <label for="email">Your Email Address</label>
-                <input type="text" id="email" name="email" value="">
+                <label for="email" aria-label="You email address">Your Email Address</label>
+                <input type="text" id="email" name="email" value="" required>
             </div>
 
             <div class="courses">
-                <label>Which courses might interest you?</label>
+                <label aria-label="Select courses which interest you">Which courses might interest you?</label>
                 <p>(Check all that apply)?</p>
 
-                <input type="checkbox" id="course1" name="course1" value="">
+                <input type="checkbox" id="course1" name="course1" value="" aria-label="SystemVerilog Design">
                 <label for="course1">SystemVerilog Design</label><br>
 
-                <input type="checkbox" id="course2" name="course2" value="">
+                <input type="checkbox" id="course2" name="course2" value="" aria-label="SystemVerilog Fundamentals">
                 <label for="course2">SystemVerilog Fundamentals</label><br>
 
-                <input type="checkbox" id="course3" name="course3" value="">
+                <input type="checkbox" id="course3" name="course3" value="" aria-label="UVM">
                 <label for="course3">Universal Verification Methodology (UVM)</label><br>
 
-                <input type="checkbox" id="course4" name="course4" value="">
+                <input type="checkbox" id="course4" name="course4" value="" aria-label="SystemVerilog RTL Synthesis">
                 <label for="course4">SystemVerilog RTL Synthesis</label><br>
                 
-                <input type="checkbox" id="course5" name="course5" value="">
+                <input type="checkbox" id="course5" name="course5" value="" aria-label="CDC and FIFO Design">
                 <label for="course5">CDC & FIFO Design</label><br>
                                 
-                <input type="checkbox" id="course6" name="course6" value="">
+                <input type="checkbox" id="course6" name="course6" value="" aria-label="Custom Training">
                 <label for="course6">Custom Training</label><br>
 
-                <input type="submit" name="submit" id="submit" value="Submit Training Information Request">
+                <input type="submit" name="submit" id="submit" value="Submit Training Information Request" aria-label="Submit Request">
             </div>
         </form>
             
