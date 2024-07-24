@@ -8,17 +8,17 @@
 
     }
 
-    .filtering {
+    #filtering {
         display: flex;
     }
 
     /* Change state in large view */
-    .filtering li {
+    #filtering li {
         display: block;
         flex: 1 1 100%;
     }
 
-    .filtering a {
+    #filtering a {
         text-align: center;
     }
     
