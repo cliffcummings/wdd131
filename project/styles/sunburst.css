@@ -145,9 +145,9 @@ ul {
 } */
 
 /* display: flex defined in filtermenu tag */
-/* #filtermenu.show {
+#filtermenu.show {
     flex-direction: column;
-} */
+}
 
 #filtermenu.show::before {
 	content: "❎";
@@ -211,13 +211,15 @@ ul {
     list-style: none;
     margin: 0;
     max-width: 250px;
+    display: none;
 }
 
-.filtering .show {
+.filtering.show {
     background-color: red;
     list-style: none;
     margin: 0;
     max-width: 450px;
+    display: block;
 }
 
 /* TODO - text-align */
