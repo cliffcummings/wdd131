@@ -68,7 +68,7 @@ header .center {
 main {
     /* position: relative; */
     padding: 1rem;
-    background-color: var(--accent_color);
+    background-color: var(--accent_color3);
     min-width: 400px;
     width: 100%;
 }
