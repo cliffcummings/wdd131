@@ -2,11 +2,11 @@
 @media screen and (min-width: 650px) {
 
     /* background-color: aqua; */
-	nav ul li {
-        /* background-color: var(--accent_color3); */
-        background-color: aqua;
-
-    }
+	nav ul, li {
+        display: block;
+        flex: 1 1 100%;
+        margin: 0 1rem 1rem 1rem;
+        }
 
     .filtering {
         display: flex;

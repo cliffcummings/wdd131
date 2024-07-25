@@ -2,7 +2,7 @@
 @media screen and (min-width: 650px) {
 
     /* background-color: aqua; */
-	nav ul li {
+	nav ul, li {
         /* background-color: var(--accent_color3); */
         display: block;
         flex: 1 1 100%;
