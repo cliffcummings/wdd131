@@ -161,6 +161,14 @@ ul {
     font-weight: bold;
 }
 
+.redbox {
+    border: 3px solid red;
+    padding: 3px;
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+    font-weight: bold;    
+}
+
 .box {
     border: 3px solid var(--back_color1);
     padding: 3px;

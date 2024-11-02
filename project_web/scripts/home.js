@@ -18,10 +18,28 @@
 //     // Display result inside a div element
 //     document.getElementById("result").innerHTML = "Width: " + w;
 // }
- 
-// // Attaching the event listener function to window's resize event
-// window.addEventListener("resize", displayWindowInfo);
-
-// // Calling the function for the first time
-// displayWindowInfo();
 // //----------------------------------------------------------------------------
+
+function createCoursesTable(filtered) {
+    // console.log("Starting createCoursesTable function");
+    // Clear out existing innerWidth-created table
+    document.getElementById("coursestable").innerHTML = "";
+    // Get the table once
+    let table = document.getElementById("cliffpapers");
+    // let table = [];
+
+    // Now append rows and table-data to the table
+    filtered.forEach(course => {
+        // console.log(`${paper.conf} ${paper.year}`);
+
+        let greeting = document.createElement("tr");
+        let coursename = document.createElement("tr");
+        let hourspenang = document.createElement("tr");
+        let hoursUSwest = document.createElement("tr");
+        let hoursUSeast = document.createElement("tr");
+        let hoursEurope = document.createElement("tr");
+        let hoursIndia  = document.createElement("tr");
+        let date = document.createElement("tr");
+
+    })
+}
